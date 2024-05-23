@@ -1,0 +1,82 @@
+{
+  "id": "outgunned-csb-en",
+  "title": "Outgunned (CSB) (EN)",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "custom-system-builder",
+        "type": "system",
+        "compatibility": {}
+      }
+    ],
+    "recommends": [
+      {
+        "id": "dice-so-nice",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  },
+  "authors": [
+    {
+      "name": "Pedro Baringo",
+	  "url": "https://github.com/pedrobaringo",
+	  "discord": "pedrobari",
+	  "github": "pedrobaringo",
+      "flags": {}
+    }
+  ],
+  "packs": [
+    {
+      "name": "actortemplates",
+      "label": "Actor_Templates",
+      "path": "packs/actortemplates",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "custom-system-builder",
+      "flags": {}
+    },
+    {
+      "name": "object-templates",
+      "label": "Object Templates",
+      "path": "packs/object-templates",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "custom-system-builder",
+      "flags": {}
+    },
+    {
+      "name": "ogmacros",
+      "label": "OG_Macros",
+      "path": "packs/ogmacros",
+      "type": "Macro",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "custom-system-builder",
+      "flags": {}
+    }
+  ],
+  "styles": [
+    "styles/Outgunned.css"
+  ],
+  "esmodules": [
+    "modules/outgunned.js",
+   "modules/welcomemessage.js"
+  ],
+  "url": "https://github.com/pedrobaringo/outgunned-csb-en",
+  "manifest": "https://github.com/pedrobaringo/outgunned-csb-en/releases/latest/download/module.json",
+  "download": "https://github.com/pedrobaringo/outgunned-csb-en/releases/download/1.0.0/outgunned-csb-en.zip"
+}
