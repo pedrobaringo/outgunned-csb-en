@@ -1,3 +1,24 @@
-2024/05/23-10:43:22.441416 7f18f1381700 Recovering log #4
-2024/05/23-10:43:22.447125 7f18f1381700 Delete type=3 #2
-2024/05/23-10:43:22.447159 7f18f1381700 Delete type=0 #4
+2024/05/29-08:53:00.866227 7f18eb7fe700 Recovering log #7
+2024/05/29-08:53:00.868942 7f18eb7fe700 Level-0 table #9: started
+2024/05/29-08:53:00.873625 7f18eb7fe700 Level-0 table #9: 97801 bytes OK
+2024/05/29-08:53:00.879241 7f18eb7fe700 Delete type=0 #7
+2024/05/29-08:53:00.879854 7f18eb7fe700 Delete type=3 #6
+2024/05/29-09:09:25.172281 7f18e9353700 Level-0 table #12: started
+2024/05/29-09:09:25.176607 7f18e9353700 Level-0 table #12: 45589 bytes OK
+2024/05/29-09:09:25.178487 7f18e9353700 Delete type=0 #10
+2024/05/29-09:09:25.180868 7f18e9353700 Manual compaction at level-0 from '!actors!66I5KCdcWF0Eey1r' @ 72057594037927935 : 1 .. '!actors!qlHDd6ukwsc44HT4' @ 0 : 0; will stop at '!actors!qlHDd6ukwsc44HT4' @ 15 : 1
+2024/05/29-09:09:25.180874 7f18e9353700 Compacting 2@0 + 0@1 files
+2024/05/29-09:09:25.185174 7f18e9353700 Generated table #13@0: 6 keys, 45589 bytes
+2024/05/29-09:09:25.185221 7f18e9353700 Compacted 2@0 + 0@1 files => 45589 bytes
+2024/05/29-09:09:25.187366 7f18e9353700 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/05/29-09:09:25.187426 7f18e9353700 Delete type=2 #12
+2024/05/29-09:09:25.187497 7f18e9353700 Delete type=2 #9
+2024/05/29-09:09:25.214034 7f18e9353700 Manual compaction at level-0 from '!actors!qlHDd6ukwsc44HT4' @ 15 : 1 .. '!actors!qlHDd6ukwsc44HT4' @ 0 : 0; will stop at (end)
+2024/05/29-09:09:25.214138 7f18e9353700 Manual compaction at level-1 from '!actors!66I5KCdcWF0Eey1r' @ 72057594037927935 : 1 .. '!actors!qlHDd6ukwsc44HT4' @ 0 : 0; will stop at '!actors!qlHDd6ukwsc44HT4' @ 30 : 1
+2024/05/29-09:09:25.214142 7f18e9353700 Compacting 1@1 + 1@2 files
+2024/05/29-09:09:25.219154 7f18e9353700 Generated table #14@1: 6 keys, 45589 bytes
+2024/05/29-09:09:25.219169 7f18e9353700 Compacted 1@1 + 1@2 files => 45589 bytes
+2024/05/29-09:09:25.221371 7f18e9353700 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/05/29-09:09:25.221431 7f18e9353700 Delete type=2 #13
+2024/05/29-09:09:25.221496 7f18e9353700 Delete type=2 #5
+2024/05/29-09:09:25.229776 7f18e9353700 Manual compaction at level-1 from '!actors!qlHDd6ukwsc44HT4' @ 30 : 1 .. '!actors!qlHDd6ukwsc44HT4' @ 0 : 0; will stop at (end)

@@ -2071,3 +2071,28 @@ font-family:'Futura';
 	display:grid;
 	grid-template-columns: 40% 55%
 }
+.paneldescdercomp {
+	display:grid;
+	grid-template-columns: 55% 45%;
+	gap:0px;
+	margin-top:10px;
+}
+.panelrulgrancomp {
+	display:grid;
+	grid-template-columns: 80% 10%;
+	gap:0px;
+}
+.panelcolumna1comp {
+	display:grid;
+	grid-template-columns: 31% 69%;
+	gap:20px;
+	margin-right:40px;
+}
+.rulclickcomp {
+    transform: rotate(90deg);
+	font-size:1.2em;
+	padding:0px;
+	margin-left:0px;
+	height: fit-content;
+	top:35%;
+}
