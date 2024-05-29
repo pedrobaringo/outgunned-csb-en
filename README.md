@@ -1,6 +1,6 @@
 # Outgunned CSB EN
 
-You'll need to have the Custo System Builder installed ( https://foundryvtt.com/packages/custom-system-builder ) that needs the following module https://foundryvtt.com/packages/_chatcommands
+You'll need to have the Custom System Builder installed ( https://foundryvtt.com/packages/custom-system-builder ) that needs the following module https://foundryvtt.com/packages/_chatcommands
 
 To install the Outgunned Module you have to go to Add-On Modules and install it using this Manifest: https://github.com/pedrobaringo/outgunned-csb-en/releases/latest/download/module.json
 
