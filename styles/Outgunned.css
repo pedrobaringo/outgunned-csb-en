@@ -2130,7 +2130,7 @@ font-family:'Futura';
 }
 .paneldescmismision {
     display: grid;
-    grid-template-columns: 8% 92%;
+    grid-template-columns: 11% 89%;
     gap: 0px;
     margin: 0px 0px 2px 0px;
     border-bottom: 2px solid var(--theme-color);
