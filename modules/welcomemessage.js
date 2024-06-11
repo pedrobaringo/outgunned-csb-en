@@ -2,13 +2,83 @@ Hooks.once("init", function() {
     console.log("Initializing Outgunned module")
 
     game.settings.register("outgunned-csb-en", "firstTimeStart", {
-        name: "Force Welcome message",
+       name: "Force Welcome message",
         hint: "If you check this box you will see the Welcome message the next time you enter the World.",
         scope: "client",
         config: true,
         default: false,
         type: Boolean
     })
+	game.settings.register("outgunned-csb-en", "ambientacion", {
+        name: "Setting",
+        hint: "Select the Setting you want to use to change the style of the sheets.",
+        scope: "world",
+        config: true,
+		requiresReload: true,
+		type: String,
+		choices: {
+			"outgunned": "Outgunned",
+			"wok": "World of Killers",
+			"adventure": "Adventure",
+			"starraiders": "Star Raiders",
+			"risingdragon": "Rising Dragon",
+			"cloakdagger": "Cloak & Dagger",
+			"greatpowers": "Great Powers",
+			"weirderthings": "Weirder Things",
+			"kindmagic": "A Kind of Magic",
+			"killingaliens": "Killing Aliens",
+			"ghosthunters": "Ghost hunters",
+			"midnightwars": "Midnight Wars",
+			"neonnoir": "Neon Noir",
+			"everything": "Everything at once"
+		},
+		default: "outgunned",
+		onChange: value => {
+			if (value=="outgunned") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_Basic.css");
+			} else if (value=="wok") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_WoK.css");
+			} else if (value=="adventure") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_Adventure.css");
+			} else if (value=="starraiders") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_StarRaiders.css");
+			} else if (value=="risingdragon") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_RisingDragon.css");
+			} else if (value=="cloakdagger") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_CaD.css");
+			} else if (value=="greatpowers") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_GreatPowers.css");
+			} else if (value=="weirderthings") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_WeirderThings.css");
+			} else if (value=="kindmagic") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_AKindofMagic.css");
+			} else if (value=="killingaliens") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_KillingAliens.css");
+			} else if (value=="ghosthunters") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_GhostHunters.css");
+			} else if (value=="midnightwars") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_MidnightWars.css");
+			} else if (value=="neonnoir") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_NeonNoir.css");
+			} else if (value=="everything") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_Everything.css");
+			}
+		}
+	})
 })
 
 Hooks.once("ready", function() {

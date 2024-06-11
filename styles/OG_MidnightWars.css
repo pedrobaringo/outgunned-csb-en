@@ -1,0 +1,17 @@
+/* CSS para Outgunned Midnight Wars
+https://codepen.io/sosuke/pen/Pjoqqp
+*/
+:root {
+	--theme-color:  #623d91;
+	--director-color: #b3251b;
+	--background-imagen: url('../assets/Fondo Outgunned_MidnightWars.webp')center;
+	--filter-color: invert(24%) sepia(19%) saturate(3828%) hue-rotate(238deg) brightness(95%) contrast(86%);
+	--spotlight-icon: url('../assets/Spotlight_MidnightWars_black.webp');
+	--adrenaline-text: 'Adrenaline!';
+	--bullet-text: 'Blood/Beast';
+	--bullet-image: url('../assets/checkvamp_black.webp');
+	--backup-text: 'Backup';
+	--backup-image: url('../assets/checkrefuerzos_black.webp');
+	--bluff-text: 'Bluff';
+	--bluff-image: url('../assets/checkfarol_black.webp');
+}

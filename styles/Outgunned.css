@@ -7,11 +7,11 @@
   src: url('../assets/futura medium bt.ttf');
 }
 .custom-system-actor-content {
-	background: url('../assets/Fondo Outgunned.webp')center;
+	background: var(--background-imagen);
 	background-repeat: no-repeat;
  	background-size: 100% 100%;
 	font-family:'Futura';
-	color: #b3251b;
+	color: var(--theme-color);
 }
 .mayustext {
 	text-transform: uppercase;
@@ -33,19 +33,14 @@
 .labcampo {
 	font-size:1.2em;
 	color: #fffefc;
-	background-color:#b3251b;
-	border-style: solid;
-	border-width: 0px 0px 0px 20px;
-	border-image: url(../assets/MarcoCampos.webp);
-	border-image-slice: 50;
-	border-image-repeat: round;
-	background-clip: padding-box;
-	padding:0px 5px 0px 5px;
+	background-color:var(--theme-color);
+	padding:0px 5px 0px 20px;
+	clip-path: polygon(15px 0%, 100% 0, 100% 100%, 0% 100%);
 }
 .labcamponorm {
 	font-size:1.2em;
 	color: #fffefc;
-	background-color:#b3251b;
+	background-color:var(--theme-color);
 	border-style: solid;
 	border-width: 0px 0px 0px 0px;
 	padding:3px 0px 3px 0px;
@@ -54,26 +49,16 @@
 .labcamporev {
 	font-size:1.3em;
 	color: #fffefc;
-	background-color:#b3251b;
-	border-style: solid;
-	border-width: 0px 20px 0px 0px;
-	border-image: url(../assets/MarcoCamposReverse.webp);
-	border-image-slice: 50;
-	border-image-repeat: round;
-	background-clip: padding-box;
-	padding: 3px 0px 3px 0px;
+	background-color:var(--theme-color);
+	clip-path: polygon(0 0, 96% 0, 100% 100%, 0% 100%);
+	padding: 3px 0px 3px 20px;
 }
 .labcampovehic {
 	font-size:1.3em;
 	color: #fffefc;
-	background-color:#b3251b;
-	border-style: solid;
-	border-width: 0px 20px 0px 0px;
-	border-image: url(../assets/MarcoCamposReverse.webp);
-	border-image-slice: 50;
-	border-image-repeat: round;
-	background-clip: padding-box;
-	padding: 3px 0px 3px 0px;
+	background-color:var(--theme-color);
+	padding: 3px 0px 3px 20px;
+	clip-path: polygon(0 0, 96% 0, 100% 100%, 0% 100%);
 	margin:0px;
 }
 .labeltitulo {
@@ -88,7 +73,7 @@
 	grid-template-columns: 11% 89%;
 	gap:0px;
 	margin:0px 0px 2px 0px;
-	border-bottom:2px solid #b3251b;
+	border-bottom:2px solid var(--theme-color);
 }
 .nommont {
 	font-size:0.7em;
@@ -103,14 +88,14 @@
 	grid-template-columns: 10% 90%;
 	gap:0px;
 	margin:0px 0px 2px 0px;
-	border-bottom:2px solid #b3251b;
+	border-bottom:2px solid var(--theme-color);
 }
 .paneldesc2 {
 	display: grid;
 	grid-template-columns: 17% 53% 10% 20%;
 	gap:0px;
 	margin:0px 0px 2px 0px;
-	border-bottom:2px solid #b3251b;
+	border-bottom:2px solid var(--theme-color);
 }
 .textinputdesc input[type="text"]{
 	background: transparent;
@@ -127,19 +112,20 @@
     -webkit-appearance: initial;
     appearance: initial;
 	margin:0px;
-    background: url('../assets/CheckRojo.webp');
+    background: url('../assets/CheckRojo_black.webp');
 	background-size:20px;
 	background-repeat: no-repeat;
 	flex: 0 0 20px;
     width: 20px;
     height: 25px;
     cursor: pointer;
+	filter: var(--filter-color);
 }
 .checkbox1 input[type="checkbox"]:checked {
-    background: url('../assets/CheckRojo_checked.webp');
+    background: url('../assets/CheckRojo_black_checked.webp');
 	background-size:20px;
 	background-repeat: no-repeat;
-	-webkit-filter: none !important;
+	filter: var(--filter-color);
 }
 .checkbox1 {
 	margin:0px;
@@ -194,19 +180,20 @@
     -webkit-appearance: initial;
     appearance: initial;
 	margin:0px;
-    background: url('../assets/aguantenormcheck.webp');
+    background: url('../assets/aguantenormcheck_black.webp');
 	background-size:25px;
 	background-repeat: no-repeat;
 	flex: 0 0 25px;
     width: 25px;
     height: 30px;
     cursor: pointer;
+	filter: var(--filter-color);
 }
 .checkaguantenorm input[type="checkbox"]:checked {
-    background: url('../assets/aguantenormcheck_checked.webp');
+    background: url('../assets/aguantenormcheck_black_checked.webp');
 	background-size:25px;
 	background-repeat: no-repeat;
-	-webkit-filter: none !important;
+	filter: var(--filter-color);
 }
 .checkaguantenorm {
 	margin:0px;
@@ -311,7 +298,7 @@
 }
 .tablarasgos .custom-system-dynamicRow{
 	display:grid;
-	grid-template-columns: 80% 10% 10%;
+	grid-template-columns: 80% 7% 8% 5%;
 	grid-template-rows: auto auto;
 	align-items:center;
 	width:100%
@@ -330,18 +317,23 @@
 	padding:0px;
 }
 .tablarasgos tr td:nth-child(3){
-	grid-column: 1 / span 3;
-	order:4;
+	grid-column: 3 / span 1;
+	order:3;
 	padding:0px;
 }
 .tablarasgos tr td:nth-child(4){
-	grid-column: 3 / span 1;
+	grid-column: 1 / span 4;
+	order:4;
+	padding:0px;
+}
+.tablarasgos tr td:nth-child(5){
+	grid-column: 4 / span 1;
 	order:3;
 	padding:0px;
 	justify-content: flex-end;
 	margin:0px;
 }
-.tablarasgos tr td:nth-child(4) div{
+.tablarasgos tr td:nth-child(5) div{
 	margin:0px;
 	justify-content: flex-end;
 }
@@ -354,38 +346,38 @@
 .tablarasgos tr td:nth-child(1) a img{
 	display: none;
 }
-.tablarasgos tr td:nth-child(3) div p{
+.tablarasgos tr td:nth-child(4) div p{
 	margin:0px;
 	padding:3px;
 	font-size:1em;
 	font-family:'FuturaMed';
 }
-.tablarasgos tr td:nth-child(3){
+.tablarasgos tr td:nth-child(4){
 	background-color: white;
 	border-left: 1px solid black;
 	border-bottom: 1px solid black;
 	border-right: 1px solid black;
-	border-top: 2px solid #b3251b;
+	border-top: 2px solid var(--theme-color);
 }
 .tablarasgos tr td:nth-child(1) {
-	background-color: #b3251b;
+	background-color: var(--theme-color);
 	color:#fffefc;
 	height:100%;
 	padding-left:5px;
 }
 .tablarasgos tr td:nth-child(2) {
-	background-color: #b3251b;
-	border-style: solid;
-	border-width: 0px 50px 0px 0px;
-	border-image: url(../assets/BordeOnda1.webp);
-	border-image-slice: 600;
-	border-image-repeat: stretch;
-	background-clip: padding-box;
 	color:#fffefc;
+	background-color: var(--theme-color);
 	height:100%;
-	padding-left:5px;
 }
-
+.tablarasgos tr td:nth-child(3) {
+	background-image: url(../assets/BordeOndaSingle_black.webp);
+	background-size: 100% 100%;
+	height:100%;
+	width:100%;
+	padding:0px;
+	filter: var(--filter-color);
+}
 .panelder {
 	box-shadow: -5px 0px 50px -20px black;
 	clip-path: inset(0px 0px 0px -50px);
@@ -402,17 +394,18 @@
 	width:100px;
    height:100px;
    border-radius:50%;
-   background: url(../assets/Spotlight.webp);
+   background: var(--spotlight-icon);
 	background-repeat: no-repeat;
  	background-size: contain;
 	background-position: center;
    position:relative;
    margin:0px 0px 0px 27%;
+	filter: var(--filter-color);
 }
 .checkspot input[type="checkbox"]{
 	-webkit-appearance: initial;
     appearance: initial;
-	border-color: #b3251b;
+	border-color: var(--theme-color);
 	border-width:1.5px;
 	border-style: solid;
 	border-radius:50%;
@@ -425,12 +418,12 @@
 .checkspot input[type="checkbox"]:checked {
 	-webkit-appearance: initial;
     appearance: initial;
-	border-color: #b3251b;
+	border-color: var(--theme-color);
 	border-width:1.5px;
 	border-style: solid;
 	border-radius:50%;
 	margin:0px;
-	background-color:#b3251b;
+	background-color:var(--theme-color);
 	width: 15px;
 	height:15px;
 }
@@ -454,19 +447,20 @@
     -webkit-appearance: initial;
     appearance: initial;
 	margin:0px;
-    background: url('../assets/AdrenalinaCheck.webp');
+    background: url('../assets/AdrenalinaCheck_black.webp');
 	background-size:15px;
 	background-repeat: no-repeat;
 	flex: 0 0 15px;
     width: 15px;
     height: 28px;
     cursor: pointer;
+	filter: var(--filter-color);
 }
 .checkadren input[type="checkbox"]:checked {
-    background: url('../assets/AdrenalinaCheck_checked.webp');
+    background: url('../assets/AdrenalinaCheck_black_checked.webp');
+	filter: var(--filter-color);
 	background-size:15px;
 	background-repeat: no-repeat;
-	-webkit-filter: none !important;
 }
 .checkadren {
 	margin:0px;
@@ -491,7 +485,7 @@
 .exptext  input[type="text"]{
 	font-family:'FuturaMed';
 	background: transparent;
-	border-bottom:1.5px solid #b3251b;
+	border-bottom:1.5px solid var(--theme-color);
 	border-radius:0px;
 	border-top:0px;
 	border-left:0px;
@@ -545,20 +539,21 @@
 	width:140px;
    height:140px;
    border-radius:50%;
-   background: url(../assets/Ruleta_muerte.webp);
+   background: url(../assets/Ruleta_muerte_black.webp);
 	background-repeat: no-repeat;
  	background-size: contain;
 	background-position: center;
    position:relative;
    margin:0px;
 	top:15%;
+	filter: var(--filter-color);
 }
 .ruletacheck input[type="checkbox"]{
 	-webkit-appearance: initial;
     appearance: initial;
 	position:absolute;
 	left:0px;
-	border-color: #b3251b;
+	border-color: var(--theme-color);
 	border-width:0px;
 	border-style: solid;
 	border-radius:50%;
@@ -579,7 +574,7 @@
 .ruletacheck input[type="checkbox"]:checked {
 	-webkit-appearance: initial;
     appearance: initial;
-	border-color: #b3251b;
+	border-color: var(--theme-color);
 	border-width:0px;
 	border-style: solid;
 	border-radius:50%;
@@ -813,19 +808,20 @@
     -webkit-appearance: initial;
     appearance: initial;
 	margin:0px;
-    background: url('../assets/Cargador.webp');
+    background: url('../assets/Cargador_black.webp');
 	background-size:13px;
 	background-repeat: no-repeat;
 	flex: 0 0 13px;
     width: 13px;
     height: 28px;
     cursor: pointer;
+	filter: var(--filter-color);
 }
 .cargcheck input[type="checkbox"]:checked {
-    background: url('../assets/Cargador_checked.webp');
+    background: url('../assets/Cargador_checked_black.webp');
 	background-size:13px;
 	background-repeat: no-repeat;
-	-webkit-filter: none !important;
+	filter: var(--filter-color);
 }
 .cargcheck {
 	margin:0px;
@@ -838,6 +834,8 @@
 	font-family:'FuturaMed';
 	background: transparent;
 	border-width: 0px;
+ margin:0px;
+	padding:0px;
 }
 .tablequippan {
 	margin-left:10px;
@@ -869,19 +867,20 @@
     -webkit-appearance: initial;
     appearance: initial;
 	margin:0px;
-    background: url('../assets/Maletin.webp');
+    background: url('../assets/Maletin_black.webp');
 	background-size:30px;
 	background-repeat: no-repeat;
 	flex: 0 0 30px;
     width: 30px;
     height: 25px;
     cursor: pointer;
+	filter: var(--filter-color);
 }
 .maletincheck input[type="checkbox"]:checked {
-    background: url('../assets/Maletin_checked.webp');
+    background: url('../assets/Maletin_checked_black.webp');
 	background-size:30px;
 	background-repeat: no-repeat;
-	-webkit-filter: none !important;
+	filter: var(--filter-color);
 }
 .tablequippan table tr:first-child{
 	font-size:0.7em;
@@ -907,21 +906,21 @@
 	border-bottom:1px solid black;
 }
 .cashpig {
-	background: url('../assets/cashpig.webp')center;
+	background: url('../assets/cashpig_black.webp')center;
 	background-repeat: no-repeat;
  	background-size: contain;
 	height:100px;
+	filter: var(--filter-color);
 }
 .cashpanel {
 	gap:0px;
 	grid-template-columns: auto auto auto auto auto;
 }
-
 .cashcheck input[type="checkbox"] {
     -webkit-appearance: initial;
     appearance: initial;
 	margin:0px;
-    background: url('../assets/cashcheck.webp');
+    background: url('../assets/cashcheck_black.webp');
 	background-size:20px;
 	background-repeat: no-repeat;
 	flex: 0 0 20px;
@@ -930,7 +929,9 @@
     cursor: pointer;
 }
 .cashcheck input[type="checkbox"]:checked {
-    background: url('../assets/cashcheck_checked.webp');
+	background-color:var(--theme-color);
+	border-radius:50%;
+	height:22px;
 	background-size:20px;
 	background-repeat: no-repeat;
 	-webkit-filter: none !important;
@@ -968,13 +969,14 @@
 	grid-template-columns: auto auto auto auto auto auto auto;
 }
 .velociimput{
-	background:url('../assets/oedometer.webp');
+	background:url('../assets/oedometer_black.webp');
 	background-size:70px;
 	background-repeat: no-repeat;
 	background-position: center;
 	width:70px;
 	height:70px;
 	margin:0px 2px 0px 2px;
+	filter: var(--filter-color);
 }
 .velociimput input[type="text"]{
 	background:transparent;
@@ -982,6 +984,7 @@
 	font-size:2em;
 	border-radius:50%;
 	height:70px;
+ color:black;
 }
 .checkarmorgris input[type="checkbox"] {
     -webkit-appearance: initial;
@@ -1037,19 +1040,20 @@
     -webkit-appearance: initial;
     appearance: initial;
 	margin:0px;
-    background: url('../assets/Moto.webp');
+    background: url('../assets/Moto_black.webp');
 	background-size:45px;
 	background-repeat: no-repeat;
 	flex: 0 0 45px;
     width: 45px;
     height: 30px;
     cursor: pointer;
+	filter: var(--filter-color);
 }
 .motocheck input[type="checkbox"]:checked {
-    background: url('../assets/Moto_checked.webp');
+    background: url('../assets/Moto_checked_black.webp');
 	background-size:45px;
 	background-repeat: no-repeat;
-	-webkit-filter: none !important;
+	filter: var(--filter-color);
 }
 .motocheck {
 	align-items: center;
@@ -1059,19 +1063,20 @@
     -webkit-appearance: initial;
     appearance: initial;
 	margin:0px;
-    background: url('../assets/Car.webp');
+    background: url('../assets/Car_black.webp');
 	background-size:45px;
 	background-repeat: no-repeat;
 	flex: 0 0 45px;
     width: 45px;
     height: 30px;
     cursor: pointer;
+	filter: var(--filter-color);
 }
 .cochecheck input[type="checkbox"]:checked {
-    background: url('../assets/Car_checked.webp');
+    background: url('../assets/Car_checked_black.webp');
 	background-size:45px;
 	background-repeat: no-repeat;
-	-webkit-filter: none !important;
+	filter: var(--filter-color);
 }
 .cochecheck {
 	align-items: center;
@@ -1081,19 +1086,20 @@
     -webkit-appearance: initial;
     appearance: initial;
 	margin:0px;
-    background: url('../assets/Boat.webp');
+    background: url('../assets/Boat_black.webp');
 	background-size:45px;
 	background-repeat: no-repeat;
 	flex: 0 0 45px;
     width: 45px;
     height: 30px;
     cursor: pointer;
+	filter: var(--filter-color);
 }
 .barcocheck input[type="checkbox"]:checked {
-    background: url('../assets/Boat_checked.webp');
+    background: url('../assets/Boat_black_checked.webp');
 	background-size:45px;
 	background-repeat: no-repeat;
-	-webkit-filter: none !important;
+	filter: var(--filter-color);
 }
 .barcocheck {
 	align-items: center;
@@ -1103,19 +1109,20 @@
     -webkit-appearance: initial;
     appearance: initial;
 	margin:0px;
-    background: url('../assets/Heli.webp');
+    background: url('../assets/Heli_black.webp');
 	background-size:45px;
 	background-repeat: no-repeat;
 	flex: 0 0 45px;
     width: 45px;
     height: 30px;
     cursor: pointer;
+	filter: var(--filter-color);
 }
 .helicheck input[type="checkbox"]:checked {
-    background: url('../assets/Heli_checked.webp');
+    background: url('../assets/Heli_black_checked.webp');
 	background-size:45px;
 	background-repeat: no-repeat;
-	-webkit-filter: none !important;
+	filter: var(--filter-color);
 }
 .helicheck {
 	align-items: center;
@@ -1125,19 +1132,20 @@
     -webkit-appearance: initial;
     appearance: initial;
 	margin:0px;
-    background: url('../assets/Tank.webp');
+    background: url('../assets/Tank_black.webp');
 	background-size:45px;
 	background-repeat: no-repeat;
 	flex: 0 0 45px;
     width: 45px;
     height: 30px;
     cursor: pointer;
+	filter: var(--filter-color);
 }
 .tanquecheck input[type="checkbox"]:checked {
-    background: url('../assets/Tank_checked.webp');
+    background: url('../assets/Tank_black_checked.webp');
 	background-size:45px;
 	background-repeat: no-repeat;
-	-webkit-filter: none !important;
+	filter: var(--filter-color);
 }
 .tanquecheck {
 	align-items: center;
@@ -1165,7 +1173,7 @@
 .charname input[type="text"]{
 	background: transparent;
 	border:0px;
-	border-bottom:2px solid #b3251b;
+	border-bottom:2px solid var(--theme-color);
 	border-radius:0px;
 }
 .chat-message .message-content h1{
@@ -1173,7 +1181,7 @@ font-family:'Futura';
 	font-size:20px;
 	text-align:center;
 	border:0px;
-	color:#b3251b;
+	color:var(--theme-color);
 }
 .chat-message .message-content h2{
 	font-family:'Futura';
@@ -1209,11 +1217,11 @@ font-family:'Futura';
 	line-height:100%;
 	margin-top:5px;
 	margin-bottom:5px;
-	color: #b3251b;
+	color: var(--theme-color);
 	white-space: normal;
 }
 .chat-message .message-header {
-	border-bottom: 2px solid #b3251b;
+	border-bottom: 2px solid var(--theme-color);
 }
 .message .message-header .message-metadata {
 	flex:0 0 50px;
@@ -1368,21 +1376,21 @@ font-family:'Futura';
 .heroestabla table{
 	background:transparent;
 	border:0px;
-	color: #004f82;
+	color: var(--director-color);
 }
 .heroestabla table tr:nth-child(even) {
 	background:transparent;
 }
 .heroestabla table tr:not(:first-child):not(:last-child) {
-	border-bottom:2px solid #004f82;
+	border-bottom:2px solid var(--director-color);
 	border-radius:0px;
 	border-top:0px;
 	border-left:0px;
 	border-right:0px;
 }
 .panelazul {
-	color: #004f82;
-	border-color: #004f82;
+	color: var(--director-color);
+	border-color: var(--director-color);
 }
 .panelvillano div{
 	margin:0px
@@ -1393,7 +1401,7 @@ font-family:'Futura';
 	grid-template-columns: 9% 31% 17% 43%;
 	gap:0px;
 	margin:0px 0px 2px 0px;
-	border-bottom:2px solid #b3251b;
+	border-bottom:2px solid var(--theme-color);
 }
 .panelvillano2 div{
 	margin:0px
@@ -1404,27 +1412,22 @@ font-family:'Futura';
 	grid-template-columns: 15% 85%;
 	gap:0px;
 	margin:0px 0px 2px 0px;
-	border-bottom:2px solid #b3251b;
+	border-bottom:2px solid var(--theme-color);
 }
 .labcampovehicazul {
 	font-size:1.3em;
 	color: #fffefc;
-	background-color:#004f82;
-	border-style: solid;
-	border-width: 0px 20px 0px 0px;
-	border-image: url(../assets/MarcoCamposReverse_blue.webp);
-	border-image-slice: 50;
-	border-image-repeat: round;
-	background-clip: padding-box;
+	background-color:var(--director-color);
 	padding: 3px 0px 3px 0px;
 	margin:0px;
+	clip-path: polygon(0 0, 96% 0, 100% 100%, 0% 100%);
 }
 .nombremontazul {
 	display: grid;
 	grid-template-columns: 5% 95%;
 	gap:0px;
 	margin:0px 0px 2px 0px;
-	border-bottom:2px solid #004f82;
+	border-bottom:2px solid var(--director-color);
 }
 .magintop {
 	margin-top:15px;
@@ -1441,12 +1444,12 @@ font-family:'Futura';
     appearance: initial;
 	margin:0px;
 	background-color:white;
-	border:1px solid #004f82;
+	border:1px solid var(--director-color);
 	border-radius:3px;
 }
 .chaseblue input[type="checkbox"]:checked {
-	background-color:#004f82;
-	border:1px solid #004f82;
+	background-color:var(--director-color);
+	border:1px solid var(--director-color);
 	border-radius:3px;
 }
 .chasered {
@@ -1458,12 +1461,12 @@ font-family:'Futura';
     appearance: initial;
 	margin:0px;
 	background-color:white;
-	border:1px solid #b3251b;
+	border:1px solid var(--theme-color);
 	border-radius:3px;
 }
 .chasered input[type="checkbox"]:checked {
-	background-color:#b3251b;
-	border:1px solid #b3251b;
+	background-color:var(--theme-color);
+	border:1px solid var(--theme-color);
 	border-radius:3px;
 }
 .chasetable table {
@@ -1495,14 +1498,14 @@ font-family:'Futura';
 	grid-column: 1 / span 3;
 	grid-row: 3 / span 1;
 	padding:0px;
-	border-bottom: 2px solid #004f82;
+	border-bottom: 2px solid var(--director-color);
 	height:100%;
 }
 .chasetable tr td:nth-child(21){
 	grid-column: 3 / span 17;
 	grid-row: 3 / span 1;
 	padding:0px;
-	border-bottom: 2px solid #004f82;
+	border-bottom: 2px solid var(--director-color);
 	height:100%;
 }
 .chasetable tr td:nth-child(21) div{
@@ -1512,10 +1515,10 @@ font-family:'Futura';
 	margin:0px;
 }
 .chasetable tr td:nth-child(22){
-	grid-column: 1 / span 5;
+	grid-column: 1 / span 6;
 	grid-row: 4 / span 1;
 	padding:0px;
-	border-bottom: 2px solid #004f82;
+	border-bottom: 2px solid var(--director-color);
 	height:70%;
 	align-items:flex-end;
 }
@@ -1523,10 +1526,10 @@ font-family:'Futura';
 	margin:0px;
 }
 .chasetable tr td:nth-child(23){
-	grid-column: 6 / span 10;
+	grid-column: 7 / span 9;
 	grid-row: 4 / span 1;
 	padding:0px;
-	border-bottom: 2px solid #004f82;
+	border-bottom: 2px solid var(--director-color);
 	height:70%;
 }
 .chasetable tr td:nth-child(24){
@@ -1557,12 +1560,13 @@ font-family:'Futura';
 .termometro {
 	width:150px;
    height:500px;
-   background: url(../assets/Termometro.webp);
+   background: url(../assets/Termometro_black.webp);
 	background-repeat: no-repeat;
  	background-size: contain;
 	background-position: center;
    position:relative;
    margin:0px 0px 10px 10%;
+	filter: var(--filter-color);
 }
 .termocheck {
 	width: 20px;
@@ -1572,18 +1576,18 @@ font-family:'Futura';
 .termocheck input[type="checkbox"]{
 	-webkit-appearance: initial;
     appearance: initial;
-	border-color: #b3251b;
+	border-color: var(--theme-color);
 	border-width:0px;
 	border-style: solid;
 	border-radius:3px;
 	margin:0px;
-	background-color:white;
+	background-color:transparent;
 	width: 17px;
 	height:17px;
 	cursor: pointer;
 }
 .termocheck input[type="checkbox"]:checked {
-	background-color:#b3251b;
+	background-color:black;
 }
 .termocheck1 {
 	top:77%;
@@ -1683,7 +1687,7 @@ font-family:'Futura';
 }
 .tablatomas .custom-system-dynamicRow{
 	display:grid;
-	grid-template-columns: 90% 10%;
+	grid-template-columns: 85% 10% 5%;
 	grid-template-rows: auto auto;
 	align-items:center;
 	width:100%
@@ -1697,55 +1701,61 @@ font-family:'Futura';
 	padding:0px;
 }
 .tablatomas tr td:nth-child(2){
-	grid-column: 1 / span 2;
-	order:3;
+	grid-column: 2 / span 1;
+	order:1;
 	padding:0px;
 }
 .tablatomas tr td:nth-child(3){
-	grid-column: 2 / span 1;
+	grid-column: 1 / span 3;
+	order:3;
+	padding:0px;
+}
+.tablatomas tr td:nth-child(4){
+	grid-column: 3 / span 1;
 	order:2;
 	padding:0px;
 	padding:0px;
 	justify-content: flex-end;
 	margin:0px;
 }
-.tablatomas tr td:nth-child(4){
+.tablatomas tr td:nth-child(5){
 	grid-column: 3 / span 1;
 	order:3;
 	padding:0px;
 	justify-content: flex-end;
 	margin:0px;
 }
-.tablatomas tr td:nth-child(2) div p{
+.tablatomas tr td:nth-child(2){
+	background-image: url(../assets/BordeOndaSingle_black.webp);
+	background-size: 100% 100%;
+	height:100%;
+	width:100%;
+	padding:0px;
+	filter: var(--filter-color);
+}
+.tablatomas tr td:nth-child(3) div p{
 	margin:0px;
 	padding:3px;
 	font-size:1em;
 	font-family:'FuturaMed';
 }
-.tablatomas tr td:nth-child(2){
+.tablatomas tr td:nth-child(3){
 	background-color: white;
 	border-left: 1px solid black;
 	border-bottom: 1px solid black;
 	border-right: 1px solid black;
-	border-top: 2px solid #b3251b;
+	border-top: 2px solid var(--theme-color);
 }
 .tablatomas tr td:nth-child(1) {
-	background-color: #b3251b;
+	background-color: var(--theme-color);
 	color:#fffefc;
 	height:100%;
 	padding-left:5px;
 }
 .tablatomas tr td:nth-child(1) {
-	background-color: #b3251b;
-	border-style: solid;
-	border-width: 0px 50px 0px 0px;
-	border-image: url(../assets/BordeOnda1.webp);
-	border-image-slice: 600;
-	border-image-repeat: stretch;
-	background-clip: padding-box;
+	background-color: var(--theme-color);
 	color:#fffefc;
 	height:100%;
-	padding-left:5px;
 }
 .tablatomas tr:first-child {
 	display:none;
@@ -1756,65 +1766,142 @@ font-family:'Futura';
 .tablatomas tr:last-child td:last-child{
 	background-color:transparent;
 	border:0px;
+	background:none;
+	color: var(--theme-color);
+	filter: none;
 }
 .titulotomainput input[type="text"]{
 	color:white;
 	border:0px;
 	background:transparent;
 }
+.checksbala {
+	width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    position: relative;
+    margin: 0px 0px 0px 27%;
+	bottom:0px;
+	left:19%;
+}
+.fondobalablack {
+	margin:0px;
+    background: var(--bullet-image);
+	background-size:75px;
+	background-repeat: no-repeat;
+    width: 75px;
+    height: 75px;
+	filter: var(--filter-color);
+	position:relative;
+	top:-0%;
+	left:4%;
+	z-index:10;
+}
 .checkbala input[type="checkbox"] {
     -webkit-appearance: initial;
     appearance: initial;
 	margin:0px;
-    background: url('../assets/checkbala.webp');
 	background-size:75px;
 	background-repeat: no-repeat;
 	flex: 0 0 75px;
     width: 75px;
     height: 75px;
     cursor: pointer;
+	filter: var(--filter-color);
+	z-index:12;
 }
 .checkbala input[type="checkbox"]:checked {
-    background: url('../assets/checkbala_Checked.webp');
+    background: url('../assets/checkplanB_Checked.webp');
 	background-size:75px;
 	background-repeat: no-repeat;
 	-webkit-filter: none !important;
+	z-index:12;
+}
+.checksrefuerzos {
+	width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    position: relative;
+    margin: 0px 0px 0px 27%;
+	bottom:0px;
+	left:19%;
+}
+.fondorefuerzosblack {
+	margin:0px;
+    background: var(--backup-image);
+	background-size:75px;
+	background-repeat: no-repeat;
+    width: 75px;
+    height: 75px;
+	filter: var(--filter-color);
+	position:relative;
+	top:-0%;
+	left:4%;
+	z-index:10;
 }
 .checkrefuerzos input[type="checkbox"] {
     -webkit-appearance: initial;
     appearance: initial;
 	margin:0px;
-    background: url('../assets/checkrefuerzos.webp');
 	background-size:75px;
 	background-repeat: no-repeat;
 	flex: 0 0 75px;
     width: 75px;
     height: 75px;
     cursor: pointer;
+	filter: var(--filter-color);
+	z-index:12;
 }
 .checkrefuerzos input[type="checkbox"]:checked {
-    background: url('../assets/checkrefuerzos_checked.webp');
+    background: url('../assets/checkplanB_Checked.webp');
 	background-size:75px;
 	background-repeat: no-repeat;
 	-webkit-filter: none !important;
+	z-index:12;
+	transform: rotate(90deg);
+}
+.checksfarol {
+	width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    position: relative;
+    margin: 0px 0px 0px 27%;
+	bottom:0px;
+	left:19%;
+}
+.fondofarolblack {
+	margin:0px;
+    background: var(--bluff-image);
+	background-size:75px;
+	background-repeat: no-repeat;
+    width: 75px;
+    height: 75px;
+	filter: var(--filter-color);
+	position:relative;
+	top:-0%;
+	left:4%;
+	z-index:10;
 }
 .checkfarol input[type="checkbox"] {
     -webkit-appearance: initial;
     appearance: initial;
 	margin:0px;
-    background: url('../assets/checkfarol.webp');
 	background-size:75px;
 	background-repeat: no-repeat;
 	flex: 0 0 75px;
     width: 75px;
     height: 75px;
     cursor: pointer;
+	filter: var(--filter-color);
+	z-index:12;
 }
 .checkfarol input[type="checkbox"]:checked {
-    background: url('../assets/checkfarol_checked.webp');
+    background: url('../assets/checkplanB_Checked.webp');
 	background-size:75px;
 	background-repeat: no-repeat;
 	-webkit-filter: none !important;
+	z-index:12;
+	transform: rotate(180deg);
 }
 .panelmisiondoble {
 	display:grid;
@@ -1826,25 +1913,26 @@ font-family:'Futura';
 	grid-template-columns: 23% 77%;
 	gap:0px;
 	margin:0px 0px 2px 0px;
-	border-bottom:2px solid #b3251b;
+	border-bottom:2px solid var(--theme-color);
 }
 .checkaguantehotenem input[type="checkbox"] {
     -webkit-appearance: initial;
     appearance: initial;
 	margin:0px;
-    background: url('../assets/aguantehotcheck.webp');
+    background: url('../assets/aguantehotcheck_black.webp');
 	background-size:25px;
 	background-repeat: no-repeat;
 	flex: 0 0 25px;
     width: 25px;
     height: 40px;
     cursor: pointer;
+	filter: var(--filter-color);
 }
 .checkaguantehotenem input[type="checkbox"]:checked {
-    background: url('../assets/aguantehotcheck_checked.webp');
+    background: url('../assets/aguantehotcheck_black_checked.webp');
 	background-size:25px;
 	background-repeat: no-repeat;
-	-webkit-filter: none !important;
+	filter: var(--filter-color);
 }
 .checkaguantehotenem {
 	align-items: start;
@@ -1861,7 +1949,7 @@ font-family:'Futura';
 .costedesc input[type="text"]{
 	background: transparent;
 	border-width:0px 0px 2px 0px;
-	border-color: #b3251b;
+	border-color: var(--theme-color);
 	border-radius:0px;
 	text-align:center;
 	width:20%;
@@ -1881,7 +1969,7 @@ font-family:'Futura';
 }
 .tablaaccesp .custom-system-dynamicRow{
 	display:grid;
-	grid-template-columns: 70% 20% 10%;
+	grid-template-columns: 70% 16% 12% 2%;
 	grid-template-rows: auto auto;
 	align-items:center;
 	width:100%
@@ -1898,21 +1986,25 @@ font-family:'Futura';
 	grid-column: 2 / span 1;
 	order:2;
 	padding:0px 0px 0px 0px;
-	width:100px;
 }
 .tablaaccesp tr td:nth-child(3){
-	grid-column: 1 / span 3;
-	order:4;
-	padding:0px;
-}
-.tablaaccesp tr td:nth-child(4){
 	grid-column: 3 / span 1;
 	order:3;
+	padding:0px 0px 0px 0px;
+}
+.tablaaccesp tr td:nth-child(4){
+	grid-column: 1 / span 4;
+	order:5;
+	padding:0px;
+}
+.tablaaccesp tr td:nth-child(5){
+	grid-column: 4 / span 1;
+	order:4;
 	padding:0px;
 	justify-content: flex-end;
 	margin:0px;
 }
-.tablaaccesp tr td:nth-child(4) div{
+.tablaaccesp tr td:nth-child(5) div{
 	margin:0px;
 	justify-content: flex-end;
 }
@@ -1925,36 +2017,37 @@ font-family:'Futura';
 .tablaaccesp tr td:nth-child(1) a img{
 	display: none;
 }
-.tablaaccesp tr td:nth-child(3) div p{
+.tablaaccesp tr td:nth-child(4) div p{
 	margin:0px;
 	padding:3px;
 	font-size:1em;
 	font-family:'FuturaMed';
 }
-.tablaaccesp tr td:nth-child(3){
+.tablaaccesp tr td:nth-child(4){
 	background-color: white;
 	border-left: 1px solid black;
 	border-bottom: 1px solid black;
 	border-right: 1px solid black;
-	border-top: 2px solid #b3251b;
+	border-top: 2px solid var(--theme-color);
 }
 .tablaaccesp tr td:nth-child(1) {
-	background-color: #b3251b;
+	background-color: var(--theme-color);
 	color:#fffefc;
 	height:100%;
 	padding-left:5px;
 }
 .tablaaccesp tr td:nth-child(2) {
-	background-color: #b3251b;
-	border-style: solid;
-	border-width: 0px 50px 0px 0px;
-	border-image: url(../assets/BordeOnda1.webp);
-	border-image-slice: 600;
-	border-image-repeat: stretch;
-	background-clip: padding-box;
+	background-color: var(--theme-color);
 	color:#fffefc;
 	height:100%;
-	padding-left:5px;
+}
+.tablaaccesp tr td:nth-child(3) {
+	background-image: url(../assets/BordeOndaSingle_black.webp);
+	background-size: 100% 100%;
+	height:100%;
+	width:100%;
+	padding:0px;
+	filter: var(--filter-color);
 }
 .panelrasgosaccenem{
 	margin-right:3%;
@@ -1977,49 +2070,49 @@ font-family:'Futura';
 	grid-template-columns: 9% 91%;
 	gap:0px;
 	margin:0px 0px 2px 0px;
-	border-bottom:2px solid #b3251b;
+	border-bottom:2px solid var(--theme-color);
 }
 .paneldesctropo {
 	display: grid;
 	grid-template-columns: 13% 87%;
 	gap:0px;
 	margin:0px 0px 2px 0px;
-	border-bottom:2px solid #b3251b;
+	border-bottom:2px solid var(--theme-color);
 }
 .paneldescdefecto {
 	display: grid;
 	grid-template-columns: 10% 90%;
 	gap:0px;
 	margin:0px 0px 2px 0px;
-	border-bottom:2px solid #b3251b;
+	border-bottom:2px solid var(--theme-color);
 }
 .paneldesclatiguillo {
 	display: grid;
 	grid-template-columns: 23% 77%;
 	gap:0px;
 	margin:0px 0px 2px 0px;
-	border-bottom:2px solid #b3251b;
+	border-bottom:2px solid var(--theme-color);
 }
 .paneldesctrabed {
 	display: grid;
 	grid-template-columns: 8% 61% 10% 21%;
 	gap:0px;
 	margin:0px 0px 2px 0px;
-	border-bottom:2px solid #b3251b;
+	border-bottom:2px solid var(--theme-color);
 }
 .paneldescmision {
 	display: grid;
 	grid-template-columns: 15% 85%;
 	gap:0px;
 	margin:0px 0px 2px 0px;
-	border-bottom:2px solid #b3251b;
+	border-bottom:2px solid var(--theme-color);
 }
 .paneldescdirectmision {
 	display: grid;
 	grid-template-columns: 11% 89%;
 	gap:0px;
 	margin:0px 0px 2px 0px;
-	border-bottom:2px solid #004f82;
+	border-bottom:2px solid var(--director-color);
 }
 .heroestabla .custom-system-dynamicRow{
 	display:grid;
@@ -2033,35 +2126,35 @@ font-family:'Futura';
 	grid-template-columns: 5% 95%;
 	gap:0px;
 	margin:0px 0px 2px 0px;
-	border-bottom:2px solid #004f82;
+	border-bottom:2px solid var(--director-color);
 }
 .paneldescmismision {
-	display: grid;
-	grid-template-columns: 8% 92%;
-	gap:0px;
-	margin:0px 0px 2px 0px;
-	border-bottom:2px solid #b3251b;
+    display: grid;
+    grid-template-columns: 8% 92%;
+    gap: 0px;
+    margin: 0px 0px 2px 0px;
+    border-bottom: 2px solid var(--theme-color);
 }
 .panelvillanomis {
 	display: grid;
 	grid-template-columns: 11% 29% 23% 37%;
 	gap:0px;
 	margin:0px 0px 2px 0px;
-	border-bottom:2px solid #b3251b;
+	border-bottom:2px solid var(--theme-color);
 }
 .panelvillano2mis {
 	display: grid;
 	grid-template-columns: 20% 80%;
 	gap:0px;
 	margin:0px 0px 2px 0px;
-	border-bottom:2px solid #b3251b;
+	border-bottom:2px solid var(--theme-color);
 }
 .nombremontmis {
 	display: grid;
 	grid-template-columns: 7% 93%;
 	gap:0px;
 	margin:0px 0px 2px 0px;
-	border-bottom:2px solid #b3251b;
+	border-bottom:2px solid var(--theme-color);
 }
 .nivduel {
 	margin-right:5%;
@@ -2094,5 +2187,159 @@ font-family:'Futura';
 	padding:0px;
 	margin-left:0px;
 	height: fit-content;
-	top:35%;
+	top:30%;
+}
+.goldpanel {
+	gap:0px;
+	grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+}
+.goldcheck input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+	margin:0px;
+    background: url('../assets/goldcheck.webp');
+	background-size:20px;
+	background-repeat: no-repeat;
+	flex: 0 0 20px;
+    width: 20px;
+    height: 21px;
+    cursor: pointer;
+}
+.goldcheck input[type="checkbox"]:checked {
+    background: url('../assets/goldcheck_checked.webp');
+	background-size:20px;
+	background-repeat: no-repeat;
+	-webkit-filter: none !important;
+}
+.goldcheck {
+	margin:7px 3px 0px 3px;
+	align-items: start;
+}
+.textgold {
+	font-size:0.8em;
+	color: #4a4a49;
+	margin:0px;
+	margin-bottom:10px;
+}
+.checkbelmont input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+	margin:0px;
+    background: url('../assets/Belmont.webp');
+	background-size:75px;
+	background-repeat: no-repeat;
+	flex: 0 0 75px;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+.checkbelmont input[type="checkbox"]:checked {
+    background: url('../assets/Belmont_checked.webp');
+	background-size:75px;
+	background-repeat: no-repeat;
+	-webkit-filter: none !important;
+}
+.checkbladebullet input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+	margin:0px;
+    background: url('../assets/BulletBlade.webp');
+	background-size:75px;
+	background-repeat: no-repeat;
+	flex: 0 0 75px;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+.checkbladebullet input[type="checkbox"]:checked {
+    background: url('../assets/BulletBlade_Checked.webp');
+	background-size:75px;
+	background-repeat: no-repeat;
+	-webkit-filter: none !important;
+}
+.checkbluff input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+	margin:0px;
+    background: url('../assets/Bluff.webp');
+	background-size:75px;
+	background-repeat: no-repeat;
+	flex: 0 0 75px;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+.checkbluff input[type="checkbox"]:checked {
+    background: url('../assets/Bluff_Checked.webp');
+	background-size:75px;
+	background-repeat: no-repeat;
+	-webkit-filter: none !important;
+}
+.spotlightpanelback {
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    position: relative;
+    margin: 0px 0px 0px 27%;
+	bottom:-45px;
+	left:40px;
+}
+.panelruletaback {
+	width:140px;
+   height:0px;
+   position:relative;
+   margin:0px;
+	top:15%;
+	z-index:31;
+}
+.faroltext:before {
+	content: var(--bluff-text);
+}
+.refuerzostext:before {
+	content: var(--backup-text);
+}
+.balatext:before {
+	content: var(--bullet-text);
+}
+.mayustext .custom-system-rollable {
+	color: var(--theme-color);
+}
+.mayustext a:hover {
+    text-shadow: 0 0 8px var(--theme-color);
+}
+.tabbedoutgunned .tabs .item.active {
+    text-shadow: none;
+	text-decoration: underline;
+}
+.tabbedoutgunned .tabs .item:hover {
+    text-shadow: 0 0 10px var(--theme-color);
+}
+.adrentext:after {
+	content: var(--adrenaline-text);
+	margin:0px;
+}
+.adrencomp {
+	margin:0px;
+}
+.panelprincmis {
+	display:grid;
+	grid-template-columns: 70% 30%;
+	gap:0px;
+}
+.spotlightbutton button:hover {
+	box-shadow: 0 0 5px black;
+}
+:root {
+	--theme-color:  #b3251b;
+	--director-color: #004f82;
+	--background-imagen: url('../assets/Fondo Outgunned.webp')center;
+	--filter-color: invert(15%) sepia(57%) saturate(4084%) hue-rotate(351deg) brightness(106%) contrast(91%);
+	--spotlight-icon: url(../assets/Spotlight_black.webp);
+ --adrenaline-text: 'Adrenaline!';
+	--bullet-text: 'Bullet';
+	--bullet-image: url('../assets/checkbala_black.webp');
+	--backup-text: 'Backup';
+	--backup-image: url('../assets/checkrefuerzos_black.webp');
+	--bluff-text: 'Bluff';
+	--bluff-image: url('../assets/checkfarol_black.webp');
 }

@@ -1,0 +1,17 @@
+/* CSS para Outgunned Great Powers
+https://codepen.io/sosuke/pen/Pjoqqp
+*/
+:root {
+	--theme-color:  #623d91;
+	--director-color: #6c913d;
+	--background-imagen: url('../assets/Fondo Outgunned_GreatPowers.webp')center;
+	--filter-color: invert(26%) sepia(27%) saturate(2452%) hue-rotate(235deg) brightness(90%) contrast(87%);
+	--spotlight-icon: url('../assets/Spotlight_GreatPowers_black.webp');
+	--adrenaline-text: 'Adrenaline!';
+	--bullet-text: 'Blast';
+	--bullet-image: url('../assets/checkexplosion_black.webp');
+	--backup-text: 'Backup';
+	--backup-image: url('../assets/checkrefuerzos_black.webp');
+	--bluff-text: 'Bluff';
+	--bluff-image: url('../assets/checkfarol_black.webp');
+}

@@ -1,0 +1,17 @@
+/* CSS para Outgunned Everything at Once
+https://codepen.io/sosuke/pen/Pjoqqp
+*/
+:root {
+	--theme-color:  #004f82;
+	--director-color: #823300;
+	--background-imagen: url('../assets/Fondo Outgunned_Everything.webp')center;
+	--filter-color: invert(19%) sepia(74%) saturate(1851%) hue-rotate(182deg) brightness(99%) contrast(101%);
+	--spotlight-icon: url('../assets/Spotlight_Everything_black.webp');
+	--adrenaline-text: 'Adrenaline!';
+	--bullet-text: 'Break';
+	--bullet-image: url('../assets/checkbreak_black.webp');
+	--backup-text: 'Backup';
+	--backup-image: url('../assets/checkrefuerzos_black.webp');
+	--bluff-text: 'Bluff';
+	--bluff-image: url('../assets/checkfarol_black.webp');
+}

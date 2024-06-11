@@ -1,0 +1,17 @@
+/* CSS para Outgunned Adventure
+https://codepen.io/sosuke/pen/Pjoqqp
+*/
+:root {
+	--theme-color:  #634123;
+	--director-color: #234563;
+	--background-imagen: url('../assets/Fondo OutgunnedAdventure.webp')center;
+	--filter-color: invert(24%) sepia(11%) saturate(2754%) hue-rotate(346deg) brightness(93%) contrast(84%);
+	--spotlight-icon: url('../assets/Spotlight_Adventure_black.webp');
+	--adrenaline-text: 'Luck!';
+	--bullet-text: 'Bullet';
+	--bullet-image: url('../assets/checkbala_black.webp');
+	--backup-text: 'Backup';
+	--backup-image: url('../assets/checkrefuerzos_black.webp');
+	--bluff-text: 'Bluff';
+	--bluff-image: url('../assets/checkfarol_black.webp');
+}

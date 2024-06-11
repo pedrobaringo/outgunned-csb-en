@@ -1,0 +1,17 @@
+/* CSS para Outgunned Ghost Hunters
+https://codepen.io/sosuke/pen/Pjoqqp
+*/
+:root {
+	--theme-color:  #cb6c00;
+	--director-color: #005fcb;
+	--background-imagen: url('../assets/Fondo Outgunned_GhostHunters.webp')center;
+	--filter-color: invert(36%) sepia(20%) saturate(7483%) hue-rotate(27deg) brightness(106%) contrast(104%);
+	--spotlight-icon: url('../assets/Spotlight_GhostHunters_black.webp');
+	--adrenaline-text: 'Adrenaline!';
+	--bullet-text: 'Bullet';
+	--bullet-image: url('../assets/checkbala_black.webp');
+	--backup-text: 'Backup';
+	--backup-image: url('../assets/checkrefuerzos_black.webp');
+	--bluff-text: 'Bluff';
+	--bluff-image: url('../assets/checkfarol_black.webp');
+}

@@ -1,0 +1,17 @@
+/* CSS para Outgunned Killing Aliens
+https://codepen.io/sosuke/pen/Pjoqqp
+*/
+:root {
+	--theme-color:  #1b8035;
+	--director-color: #801b66;
+	--background-imagen: url('../assets/Fondo Outgunned_KillingAliens.webp')center;
+	--filter-color: invert(35%) sepia(73%) saturate(491%) hue-rotate(83deg) brightness(96%) contrast(93%);
+	--spotlight-icon: url('../assets/Spotlight_KillingAliens_black.webp');
+	--adrenaline-text: 'Adrenaline!';
+	--bullet-text: 'Bullet';
+	--bullet-image: url('../assets/checkbala_black.webp');
+	--backup-text: 'Backup';
+	--backup-image: url('../assets/checkrefuerzos_black.webp');
+	--bluff-text: 'Bluff';
+	--bluff-image: url('../assets/checkfarol_black.webp');
+}

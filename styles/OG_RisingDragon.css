@@ -1,0 +1,17 @@
+/* CSS para Outgunned Rising Dragon
+https://codepen.io/sosuke/pen/Pjoqqp
+*/
+:root {
+	--theme-color:  #1b8035;
+	--director-color: #801b66;
+	--background-imagen: url('../assets/Fondo Outgunned_RisingDragon.webp')center;
+	--filter-color: invert(18%) sepia(93%) saturate(5741%) hue-rotate(148deg) brightness(96%) contrast(79%);
+	--spotlight-icon: url('../assets/Spotlight_RisingDragon_black.webp');
+	--adrenaline-text: 'QI';
+	--bullet-text: 'Blade';
+	--bullet-image: url('../assets/BulletBlade_black.webp');
+	--backup-text: 'Backup';
+	--backup-image: url('../assets/checkrefuerzos_black.webp');
+	--bluff-text: 'Bluff';
+	--bluff-image: url('../assets/checkfarol_black.webp');
+}

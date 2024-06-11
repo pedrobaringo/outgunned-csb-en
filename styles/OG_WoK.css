@@ -1,0 +1,17 @@
+/* CSS para Outgunned World of Killers
+https://codepen.io/sosuke/pen/Pjoqqp
+*/
+:root {
+	--theme-color:  #513281;
+	--director-color: #628132;
+	--background-imagen: url('../assets/Fondo Outgunned_WoK.webp')center;
+	--filter-color: invert(18%) sepia(86%) saturate(988%) hue-rotate(236deg) brightness(97%) contrast(92%);
+	--spotlight-icon: url('../assets/Spotlight_WoK_black.webp');
+	--adrenaline-text: 'Adrenaline!';
+	--bullet-text: 'Belmont';
+	--bullet-image: url('../assets/Belmont_black.webp');
+	--backup-text: 'Bullet/Blade';
+	--backup-image: url('../assets/BulletBlade_black.webp');
+	--bluff-text: 'Bluff';
+	--bluff-image: url('../assets/checkfarol_black.webp');
+}

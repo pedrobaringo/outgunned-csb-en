@@ -1,0 +1,17 @@
+/* CSS para Outgunned Neon Noir
+https://codepen.io/sosuke/pen/Pjoqqp
+*/
+:root {
+	--theme-color:  #b3251b;
+	--director-color: #004f82;
+	--background-imagen: url('../assets/Fondo Outgunned_NeonNoir.webp')center;
+	--filter-color: invert(19%) sepia(70%) saturate(2954%) hue-rotate(348deg) brightness(87%) contrast(96%);
+	--spotlight-icon: url('../assets/Spotlight_NeonNoir_black.webp');
+	--adrenaline-text: 'Adrenaline!';
+	--bullet-text: 'Bullet';
+	--bullet-image: url('../assets/checkbala_black.webp');
+	--backup-text: 'Backup';
+	--backup-image: url('../assets/checkrefuerzos_black.webp');
+	--bluff-text: 'Bluff';
+	--bluff-image: url('../assets/checkfarol_black.webp');
+}
