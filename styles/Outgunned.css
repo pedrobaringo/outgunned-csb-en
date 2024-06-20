@@ -298,7 +298,7 @@
 }
 .tablarasgos .custom-system-dynamicRow{
 	display:grid;
-	grid-template-columns: 80% 7% 8% 5%;
+	grid-template-columns: 79% 4% 10% 7%;
 	grid-template-rows: auto auto;
 	align-items:center;
 	width:100%
@@ -315,6 +315,10 @@
 	grid-column: 2 / span 1;
 	order:2;
 	padding:0px;
+}
+.tablarasgos tr td:nth-child(2) div{
+	margin:0px;
+	margin-top:1px;
 }
 .tablarasgos tr td:nth-child(3){
 	grid-column: 3 / span 1;
@@ -1969,7 +1973,7 @@ font-family:'Futura';
 }
 .tablaaccesp .custom-system-dynamicRow{
 	display:grid;
-	grid-template-columns: 70% 16% 12% 2%;
+	grid-template-columns: 70% 5% 5% 5% 8% 7%;
 	grid-template-rows: auto auto;
 	align-items:center;
 	width:100%
@@ -1993,20 +1997,30 @@ font-family:'Futura';
 	padding:0px 0px 0px 0px;
 }
 .tablaaccesp tr td:nth-child(4){
-	grid-column: 1 / span 4;
-	order:5;
-	padding:0px;
-}
-.tablaaccesp tr td:nth-child(5){
 	grid-column: 4 / span 1;
 	order:4;
 	padding:0px;
-	justify-content: flex-end;
-	margin:0px;
 }
-.tablaaccesp tr td:nth-child(5) div{
+.tablaaccesp tr td:nth-child(5){
+	grid-column: 5 / span 1;
+	order:5;
+	padding:0px 0px 0px 0px;
+}
+.tablaaccesp tr td:nth-child(7) div{
 	margin:0px;
 	justify-content: flex-end;
+}
+.tablaaccesp tr td:nth-child(6){
+	grid-column: 1 / span 6;
+	order:7;
+	padding:0px;
+}
+.tablaaccesp tr td:nth-child(7){
+	grid-column: 6 / span 1;
+	order:6;
+	padding:0px;
+	justify-content: flex-end;
+	margin:0px;
 }
 .tablaaccesp tr td:nth-child(1) a{
 	background: transparent;
@@ -2017,13 +2031,13 @@ font-family:'Futura';
 .tablaaccesp tr td:nth-child(1) a img{
 	display: none;
 }
-.tablaaccesp tr td:nth-child(4) div p{
+.tablaaccesp tr td:nth-child(6) div p{
 	margin:0px;
 	padding:3px;
 	font-size:1em;
 	font-family:'FuturaMed';
 }
-.tablaaccesp tr td:nth-child(4){
+.tablaaccesp tr td:nth-child(6){
 	background-color: white;
 	border-left: 1px solid black;
 	border-bottom: 1px solid black;
@@ -2041,7 +2055,29 @@ font-family:'Futura';
 	color:#fffefc;
 	height:100%;
 }
+.tablaaccesp tr td:nth-child(2) div {
+	margin:0px;
+	margin-top:1px;
+}
+.tablaaccesp tr td:nth-child(3) div {
+	margin:0px;
+	margin-top:1px;
+}
+.tablaaccesp tr td:nth-child(4) div {
+	margin:0px;
+	margin-top:1px;
+}
 .tablaaccesp tr td:nth-child(3) {
+	background-color: var(--theme-color);
+	color:#fffefc;
+	height:100%;
+}
+.tablaaccesp tr td:nth-child(4) {
+	background-color: var(--theme-color);
+	color:#fffefc;
+	height:100%;
+}
+.tablaaccesp tr td:nth-child(5) {
 	background-image: url(../assets/BordeOndaSingle_black.webp);
 	background-size: 100% 100%;
 	height:100%;

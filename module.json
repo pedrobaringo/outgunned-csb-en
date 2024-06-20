@@ -1,18 +1,20 @@
 {
   "id": "outgunned-csb-en",
   "title": "Outgunned (CSB) (EN)",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "compatibility": {
     "minimum": "11",
-    "verified": "11"
+    "verified": "11.315"
   },
   "relationships": {
     "systems": [
       {
         "id": "custom-system-builder",
         "type": "system",
-        "compatibility": {}
-      }
+        "compatibility": {
+		"minimum": "3.1.1",
+		"verified": "3.1.1"
+		}
     ],
     "recommends": [
       {
@@ -25,9 +27,8 @@
   "authors": [
     {
       "name": "Pedro Baringo",
-	  "url": "https://github.com/pedrobaringo",
-	  "discord": "pedrobari",
-	  "github": "pedrobaringo",
+      "url": "https://github.com/pedrobaringo",
+      "discord": "pedrobari",
       "flags": {}
     }
   ],
@@ -74,9 +75,9 @@
   ],
   "esmodules": [
     "modules/outgunned.js",
-   "modules/welcomemessage.js"
+    "modules/welcomemessage.js"
   ],
   "url": "https://github.com/pedrobaringo/outgunned-csb-en",
   "manifest": "https://github.com/pedrobaringo/outgunned-csb-en/releases/latest/download/module.json",
-  "download": "https://github.com/pedrobaringo/outgunned-csb-en/releases/download/1.0.2/outgunned-csb-en.zip"
+  "download": "https://github.com/pedrobaringo/outgunned-csb-en/releases/download/1.0.3/outgunned-csb-en.zip"
 }
