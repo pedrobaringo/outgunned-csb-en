@@ -15,6 +15,7 @@
 		"minimum": "3.1.1",
 		"verified": "3.1.1"
 		}
+	}
     ],
     "recommends": [
       {
