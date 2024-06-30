@@ -6,6 +6,10 @@
   font-family: 'FuturaMed';
   src: url('../assets/futura medium bt.ttf');
 }
+@font-face {
+    font-family: "OutgunnedDice-Regular";
+    src: url("../assets/OutgunnedDice-Regular.otf")  format("opentype");
+}
 .custom-system-actor-content {
 	background: var(--background-imagen);
 	background-repeat: no-repeat;
@@ -1238,76 +1242,87 @@ font-family:'Futura';
 }
 .d6_og_suc {
 	display: inline-block;
-	width: 40px;
-	height: 40px;
-	background-color: transparent;
-	color: white;
-	border: 0px solid black;
-	border-radius: 5px;
-	margin: 3px;
-	text-align: center;
+	width: 40px;		  
+	 background: var(--dice-background-color) no-repeat center;
+	font-family: 'OutgunnedDice-Regular';
+	font-size:40px;
+	color: var(--theme-color);
+	height:40px;
+	border:0px;
+	border-radius:5px;
+	text-align:center;
+	position: relative;
+    line-height: 100%;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    font-weight: normal;
+	box-shadow: 2px 2px 5px black;
+	margin:5px;
 }
 .d6_og_suc_muert {
 	display: inline-block;
 	width: 50px;
-	height: 50px;
-	background-color: transparent;
-	color: white;
-	border: 0px solid black;
-	border-radius: 5px;
-	margin: 3px;
-	text-align: center;
-}
-.d6_og_suc_muert img{
-	display: inline-block;
-	width: 50px;
-	height: 50px;
-	background-color: transparent;
-	color: white;
-	border: 0px solid black;
-	border-radius: 5px;
-	margin: 3px;
-	text-align: center;
+	background: var(--dice-background-color) no-repeat center;
+	font-family: 'OutgunnedDice-Regular';
+	font-size:50px;
+	color: var(--theme-color);
+	height:50px;
+	border:0px;
+	border-radius:5px;		 
+	text-align:center;
+	position: relative;
+    line-height: 100%;
+    background-repeat: no-repeat;		  
+    background-size: 50px 50px;
+    font-weight: normal;
+	box-shadow: 2px 2px 5px black;
+	margin:5px;
+				
 }
 .d6_og_rem {
 	display: inline-block;
 	width: 40px;
-	height: 40px;
-	background-color: transparent;
-	color: black;
-	border: 0px;
-	border-radius: 5px;
-	margin: 3px;
-	text-align: center;
-}
-.d6_og_suc img{
-	display: inline-block;
-	width: 40px;
-	height: 40px;
-	background-color: transparent;
-	color: white;
-	border: 0px solid black;
-	border-radius: 5px;
-	margin: 3px;
-	text-align: center;
-}
-
-.d6_og_rem img{
-	display: inline-block;
-	width: 40px;
-	height: 40px;
-	background-color: transparent;
-	color: black;
-	border: 0px;
-	border-radius: 5px;
-	margin: 3px;
-	text-align: center;
+	background: var(--dice-background-color) no-repeat center;
+	font-family: 'OutgunnedDice-Regular';
+	font-size:40px;
+	color: var(--theme-color);
+	height:40px;	  
+	border:0px;
+	border-radius:5px;		 
+	text-align:center;
+	position: relative;
+    line-height: 100%;
+    background-repeat: no-repeat;
+	  
+    background-size: 40px 40px;
+    font-weight: normal;
+	box-shadow: 2px 2px 5px black;				
+	margin:5px;
+					
 }
 .dice-rolls_outgunned {
 	padding:0px;
 	display:flex;
 	justify-content: center;
 	flex-wrap:wrap;
+}
+.dice-tooltip .dice-rolls .roll.d6 {
+    background: var(--dice-background-color) no-repeat center;
+	font-family: 'OutgunnedDice-Regular';
+	font-size:40px;
+	color: var(--theme-color);
+	height:40px;
+	width: 40px;
+	border:0px;
+	border-radius:5px;
+	text-align:center;
+	position: relative;
+    line-height: 100%;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    font-weight: normal;
+	box-shadow: 2px 2px 5px black;
+	margin:5px;
 }
 .ogd6 img {
 	height:40px;
@@ -2368,6 +2383,7 @@ font-family:'Futura';
 :root {
 	--theme-color:  #b3251b;
 	--director-color: #004f82;
+	--dice-background-color: white;							
 	--background-imagen: url('../assets/Fondo Outgunned.webp')center;
 	--filter-color: invert(15%) sepia(57%) saturate(4084%) hue-rotate(351deg) brightness(106%) contrast(91%);
 	--spotlight-icon: url(../assets/Spotlight_black.webp);
