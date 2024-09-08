@@ -10,6 +10,10 @@
     font-family: "OutgunnedDice-Regular";
     src: url("../assets/OutgunnedDice-Regular.otf")  format("opentype");
 }
+@font-face {
+    font-family: "SkullSymbol";
+    src: url("../assets/Outgunnedsymbolfont-Regular.otf");
+}
 .custom-system-actor-content {
 	background: var(--background-imagen);
 	background-repeat: no-repeat;
@@ -1214,7 +1218,7 @@ font-family:'Futura';
 	border:0px;
 	}
 .chat-message {
-	background: url('../assets/FondoOG_2.webp')center;
+	background: var(--background-imagen-chat);
 	background-size:100% 100%;
 }
 .chat-message .message-header .message-sender{
@@ -2380,11 +2384,519 @@ font-family:'Futura';
 .spotlightbutton button:hover {
 	box-shadow: 0 0 5px black;
 }
+.almacentable table tr:first-child{
+    display:none;
+}
+.paneldesctransed {
+    display: grid;
+    grid-template-columns: 23% 46% 10% 21%;
+    gap: 0px;
+    margin: 0px 0px 2px 0px;
+    border-bottom: 2px solid var(--theme-color);
+}
+.header-fields {
+	position:relative;
+}
+div.custom-system-sheet-actions:first-of-type {
+	top:30px;
+}
+.custom-system-sheet-actions {
+	position:absolute;
+	right:0px;
+	top:0px;
+}
+.tablarmasadvpan {
+	margin-left:10px;
+}
+.tablarmasadvpan table {
+	background:transparent;
+	border:0px;
+	border-collapse: collapse;
+}
+.tablarmasadvpan .custom-system-dynamicRow {
+	display:grid;
+	grid-template-columns: 37% 49% 3% 3% 3% 5%;
+}
+.tablarmasadvpan .custom-system-dynamicRow div {
+	align-items:center;
+	padding:0px;
+}
+.tablarmasadvpan table tr:nth-child(2) td:not(:last-child){
+	border-top:1px solid black;
+}
+.tablarmasadvpan table tr:nth-child(even) td:first-child{
+	border-right:1px solid #b2b2b7;
+	border-left:1px solid black;
+	border-bottom:1px solid black;
+	background-color:white;
+}
+.tablarmasadvpan table tr:nth-child(even) td:nth-child(2){
+	border-right:1px solid black;
+	border-bottom:1px solid black;
+	background-color:white;
+}
+.tablarmasadvpan table tr:nth-child(even) td:nth-child(3){
+	border-right:1px solid #b2b2b7;
+	border-bottom:1px solid black;
+	background-color:white;
+}
+.tablarmasadvpan table tr:nth-child(even) td:nth-child(4){
+	border-right:1px solid #b2b2b7;
+	border-bottom:1px solid black;
+	background-color:white;
+}
+.tablarmasadvpan table tr:nth-child(even) td:nth-child(5){
+	border-right:1px solid #b2b2b7;
+	border-bottom:1px solid black;
+	background-color:white;
+}
+.tablarmasadvpan table tr:last-child{
+	background-color:transparent;
+}
+.tablarmasadvpan table tr:nth-child(odd) td:first-child{
+	border-right:1px solid #b2b2b7;
+	border-left:1px solid black;
+	border-bottom:1px solid black;
+	background-color:#f6f6f6;
+}
+.tablarmasadvpan table tr:nth-child(odd) td:nth-child(2){
+	border-right:1px solid black;
+	border-bottom:1px solid black;
+	background-color:#f6f6f6;
+}
+.tablarmasadvpan table tr:nth-child(odd) td:nth-child(3){
+	border-right:1px solid #b2b2b7;
+	border-bottom:1px solid black;
+	background-color:#f6f6f6;
+}
+.tablarmasadvpan table tr:nth-child(odd) td:nth-child(4){
+	border-right:1px solid #b2b2b7;
+	border-bottom:1px solid black;
+	background-color:#f6f6f6;
+}
+.tablarmasadvpan table tr:nth-child(odd) td:nth-child(5){
+	border-right:1px solid #b2b2b7;
+	border-bottom:1px solid black;
+	background-color:#f6f6f6;
+}
+.tablarmasadvpan .custom-system-dynamicRow td:nth-child(6){
+	border:0px;
+	background:transparent;
+}
+.tablarmasadvpan table tr:last-child td:first-child{
+	border-width: 0px 0px 0px 0px;
+}
+.tablarmasadvpan table tr:last-child  td:first-child{
+	background-color:transparent;
+	border:0px;
+}
+.tablarmasadvpan table tr:last-child  td:last-child{
+	background-color:transparent;
+	border:0px;
+}
+.tablarmasadvpan table tr:first-child  td:first-child{
+	background-color:transparent;
+	border:0px;
+}
+.tablarmasadvpan table tr:first-child  td:nth-child(2){
+	background-color:transparent;
+	border:0px;
+}
+.tablarmasadvpan table tr:first-child  td:nth-child(3){
+	background-color:transparent;
+	border:0px;
+}
+.tablarmasadvpan table tr:first-child  td:nth-child(4){
+	background-color:transparent;
+	border:0px;
+}
+.tablarmasadvpan table tr:first-child  td:nth-child(5){
+	background-color:transparent;
+	border:0px;
+}
+.tablarmasadvpan table tr:first-child  td:nth-child(6){
+	background-color:transparent;
+	border:0px;
+}
+.tablarmasadvpan table tr:first-child  td:nth-child(7){
+	background-color:transparent;
+	border:0px;
+}
+.tablarmasadvpan table tr:first-child  td:nth-child(9){
+	background-color:transparent;
+	border:0px;
+}
+.tablarmasadvpan table tr:first-child  td:nth-child(8){
+	background-color:transparent;
+	border:0px;
+}
+.tablarmasadvpan table tr:first-child{
+	display:none;
+}
+.tablequipadvpan {
+	margin-left:10px;
+}
+.tablequipadvpan table {
+	background:transparent;
+	border:0px;
+	border-collapse: collapse;
+}
+.tablequipadvpan .custom-system-dynamicRow {
+	display:grid;
+	grid-template-columns: 28% 69% 3%;
+}
+.tablequipadvpan table tr:nth-child(even):not(:last-child) td:not(:last-child){
+	background-color:white;
+}
+.tablequipadvpan table tr:nth-child(odd):not(:first-child):not(:last-child) td:not(:last-child){
+	background-color:#f6f6f6;
+}
+.tablequipadvpan .custom-system-dynamicRow div {
+	align-items:center;
+	padding:0px;
+}
+.tablequippan table tr:first-child{
+	display:none;
+}
+.tablequipadvpan table tr:first-child{
+	display:none;
+}
+.tablequipadvpan table tr:last-child {
+	background:transparent;
+}
+.tablequipadvpan table tr:nth-child(2):not(:last-child) td:not(:last-child){
+	border-top:1px solid black;
+}
+.tablequipadvpan table tr:not(:first-child):not(:last-child) td:nth-child(1){
+	border-right:1px solid #b2b2b7;
+	border-left:1px solid black;
+	border-bottom:1px solid black;
+}
+.tablequipadvpan table tr:not(:first-child):not(:last-child) td:nth-child(2){
+	border-right:1px solid #b2b2b7;
+	border-bottom:1px solid black;
+}
+.tablequipadvpan table tr:not(:first-child):not(:last-child) td:nth-child(2){
+	border-bottom:1px solid black;
+}
+.checksuerte input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+	margin:0px;
+    background: url('../assets/SuerteCheck_Black.webp');
+	background-size:19px;
+	background-repeat: no-repeat;
+	flex: 0 0 19px;
+    width: 19px;
+    height: 29px;
+    cursor: pointer;
+	filter: var(--filter-color);
+}
+.checksuerte input[type="checkbox"]:checked {
+    background: url('../assets/SuerteCheck_Black_Checked.webp');
+	filter: var(--filter-color);
+	background-size:19px;
+	background-repeat: no-repeat;
+}
+.checksuerte {
+	margin:0px;
+	align-items: start;
+	margin-top:7px;
+}
+.panelmochibolsa {
+	display:grid;
+	grid-template-columns: 10% 45% 45%;
+	gap:0px;
+	margin-left:10px;
+	position:relative;
+}
+.backgroundmochila {
+	position:absolute;
+	background: url('../assets/mochila.webp');
+	filter: var(--filter-color);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height:200px;
+	z-index:30;
+	top:-30px;
+	left: -20px;
+	pointer-events: none;
+}
+.panelmoch {
+	z-index:31;
+}
+.almacentable table tr:last-child{
+	background:transparent;
+}
+.panelcashtop {
+	display: grid;
+    grid-template-columns:70% auto;
+	gap:7px;
+	font-size:20px;
+}
+.panelnotas {
+	position:relative;
+	background-color:white;
+	border: 1px solid black;
+	z-index:31;
+	margin:0px;
+}
+.paneltraveldoble {
+	display:grid;
+	grid-template-columns: 46% 54%;
+	margin-right:3%;
+}
+.panelheatrival {
+	display:grid;
+	grid-template-columns: 46% 54%;
+}
+.labadv {
+	color: #4a4a49;
+	font-size:10px;
+}
+.checkadv input[type="checkbox"] {
+	position: absolute;
+    -webkit-appearance: initial;
+    appearance: initial;
+    margin: 0px;
+    background: url(../assets/CheckRojo_black.webp);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    flex: 0 0 25px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.checkadv input[type="checkbox"]:checked {
+    background: url(../assets/CheckRojo_black_checked.webp);
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
+.advpanel {
+	width: 150px;
+    height: 350px;
+    background: url(../assets/Adavceblack.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    filter: var(--filter-color);
+	margin:auto;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.checkadv1 {
+	top:9%;
+	left:-15.5%;
+}
+.checkadv2 {
+	top:31%;
+	left:-4%;
+}
+.checkadv3 {
+	top:50%;
+	left:3%;
+}
+.panelheatround {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: url(../assets/Heatround.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    filter: var(--filter-color);
+	margin:auto;
+}
+.panelrueda {
+	width: 200px;
+    height: 0px;
+    position: relative;
+    margin: auto;
+    top: 15%;
+    z-index: 31;
+}
+.paneltensheat {
+	position:relative;
+	margin:0px;
+}
+.roundheatcheck {
+    width: 20px;
+    display: block;
+    position: absolute;
+    top: 85px;
+    left: 75px;
+	z-index:31;
+}
+.roundheatcheck label {
+    position: absolute;
+    color: #d3c7bc;
+    z-index: 31;
+    top: 5px;
+    cursor: pointer;
+}
+.roundheatcheck10 label {
+    position: absolute;
+    color: #d3c7bc;
+    z-index: 31;
+    top: 5px;
+    cursor: pointer;
+	left:5px;
+}
+.roundheatcheck11 label {
+    position: absolute;
+    color: #d3c7bc;
+    z-index: 31;
+    top: 5px;
+    cursor: pointer;
+	left:5px;
+}
+.roundheatcheck6 label {
+     position: absolute;
+    color: #d3c7bc;
+    z-index: 31;
+    top: 13px;
+	left:6.5px;
+    cursor: pointer;
+	font-family: "SkullSymbol";
+	font-size:23px;
+	line-height:2%;
+}
+.roundheatcheck9 label {
+    position: absolute;
+    color: #d3c7bc;
+    z-index: 31;
+    top: 13px;
+	left:6.5px;
+    cursor: pointer;
+	font-family: "SkullSymbol";
+	font-size:23px;
+	line-height:2%;
+}
+.roundheatcheck12 label {
+    position: absolute;
+    color: #d3c7bc;
+    z-index: 31;
+    top: 13px;
+	left:6.5px;
+    cursor: pointer;
+	font-family: "SkullSymbol";
+	font-size:23px;
+	line-height:2%;
+}
+.roundheatcheck input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    position: absolute;
+    left: 0px;
+    border-color: var(--theme-color);
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 50%;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.roundheatcheck input[type="checkbox"]:checked {
+    -webkit-appearance: initial;
+    appearance: initial;
+    border-color: var(--theme-color);
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 50%;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+}
+.roundheatcheck1 {
+	transform: rotate(300deg) translate(74px) rotate(-300deg);
+}
+.roundheatcheck2 {
+	transform: rotate(330deg) translate(74px) rotate(-330deg);
+}
+.roundheatcheck3 {
+	transform: rotate(0deg) translate(74px) rotate(-0deg);
+}
+.roundheatcheck4 {
+	transform: rotate(30deg) translate(74px) rotate(-30deg);
+}
+.roundheatcheck5 {
+	transform: rotate(60deg) translate(74px) rotate(-60deg);
+}
+.roundheatcheck6 {
+	transform: rotate(90deg) translate(74px) rotate(-90deg);
+}
+.roundheatcheck7 {
+	transform: rotate(120deg) translate(74px) rotate(-120deg);
+}
+.roundheatcheck8 {
+	transform: rotate(150deg) translate(74px) rotate(-150deg);
+}
+.roundheatcheck9 {
+	transform: rotate(180deg) translate(74px) rotate(-180deg);
+}
+.roundheatcheck10 {
+	transform: rotate(210deg) translate(74px) rotate(-210deg);
+}
+.roundheatcheck11 {
+	transform: rotate(240deg) translate(74px) rotate(-240deg);
+}
+.roundheatcheck12 {
+	transform: rotate(270deg) translate(74px) rotate(-270deg);
+}
+.bordeinf {
+	border-bottom:2px solid var(--theme-color);
+	margin:0px 10px 15px 10px;
+}
+.imgtesoro {
+	margin:0px;
+}
+.imgtesoro img{
+	border:0px;
+	max-width:90%;
+	height:200px;
+	width:auto;
+	object-fit:contain;
+}
+.imgtesoro p{
+	padding:20px 20px 0px 20px;
+}
+.panelfototesokey {
+	background: url(../assets/Fondofotoprev.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: relative;
+	margin:0px;
+	filter: drop-shadow(-2px 2px 2px #222);
+}
+.labeltesoro {
+	margin:0px;
+}
+.foto1 {
+	transform: rotate(-4deg);
+}
+.foto2 {
+	transform: rotate(3deg);
+}
+.dice-tooltip .dice-rolls .roll.min {
+    filter: none;
+}
+.dice-tooltip .dice-rolls .roll.max {
+    filter: none;
+}
 :root {
 	--theme-color:  #b3251b;
 	--director-color: #004f82;
 	--dice-background-color: white;							
 	--background-imagen: url('../assets/Fondo Outgunned.webp')center;
+	--background-imagen-chat: url('../assets/FondoOG_2.webp')center;
 	--filter-color: invert(15%) sepia(57%) saturate(4084%) hue-rotate(351deg) brightness(106%) contrast(91%);
 	--spotlight-icon: url(../assets/Spotlight_black.webp);
  --adrenaline-text: 'Adrenaline!';

@@ -350,3 +350,4 @@ Hooks.once('diceSoNiceReady', (dice3d) => {
       system: "outgunnedEveryDice"
     });
 });
+
