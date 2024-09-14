@@ -2891,6 +2891,17 @@ div.custom-system-sheet-actions:first-of-type {
 .dice-tooltip .dice-rolls .roll.max {
     filter: none;
 }
+.panelrunsobrenatural {
+    display: grid;
+    grid-template-columns: 3% 97%;
+    gap: 0px;
+    margin: 0px 0px 2px 0px;
+    border-bottom: 2px solid var(--theme-color);
+	width:97%;
+}
+.experienciastabla table tr:first-child {
+	display: none;
+}
 :root {
 	--theme-color:  #b3251b;
 	--director-color: #004f82;
