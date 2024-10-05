@@ -3,7 +3,7 @@ https://codepen.io/sosuke/pen/Pjoqqp
 */
 :root {
 	--theme-color:  #634123;
-	--director-color: #234563;
+	--director-color: #134c4b;
 	--background-imagen: url('../assets/Fondo OutgunnedAdventure.webp')center;
 	--background-imagen-chat: url('../assets/Fondoadv.webp')center;
 	--filter-color: invert(24%) sepia(11%) saturate(2754%) hue-rotate(346deg) brightness(93%) contrast(84%);

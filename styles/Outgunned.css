@@ -2902,6 +2902,53 @@ div.custom-system-sheet-actions:first-of-type {
 .experienciastabla table tr:first-child {
 	display: none;
 }
+.panelheatrivaldirector {
+    display: grid;
+    grid-template-columns: 35% 65%;
+	gap:0px;
+	margin-right:3%;
+}
+.panelvillano2misdirector {
+    display: grid;
+    grid-template-columns: 16% 84%;
+    gap: 0px;
+    margin: 0px 0px 2px 0px;
+    border-bottom: 2px solid var(--theme-color);
+}
+.panelrun {
+	margin-right:3%;
+	margin-top:10px;
+}
+.checksrun {
+	width:40%;
+	margin:auto;
+	margin-top:10px;
+}
+.heroestabla table tr:first-child {
+	display:none;
+}
+.heroestablatravel .custom-system-dynamicRow{
+	display:grid;
+	grid-template-columns: 11% 84% 5%;
+}
+.heroestablatravel tr:last-child td:first-child{
+	display:none;
+}
+.heroestablatravel table{
+	background:transparent;
+	border:0px;
+	color: var(--director-color);
+}
+.heroestablatravel table tr:nth-child(even) {
+	background:transparent;
+}
+.heroestablatravel table tr:not(:first-child):not(:last-child) {
+	border-bottom:2px solid var(--director-color);
+	border-radius:0px;
+	border-top:0px;
+	border-left:0px;
+	border-right:0px;
+}
 :root {
 	--theme-color:  #b3251b;
 	--director-color: #004f82;
@@ -2917,4 +2964,5 @@ div.custom-system-sheet-actions:first-of-type {
 	--backup-image: url('../assets/checkrefuerzos_black.webp');
 	--bluff-text: 'Bluff';
 	--bluff-image: url('../assets/checkfarol_black.webp');
+	--dicefont: url('../assets/OutgunnedDice-Regular.otf');
 }
