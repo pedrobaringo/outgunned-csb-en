@@ -144,7 +144,7 @@ Hooks.once("ready", function() {
 						game.user.setFlag("outgunned-csb-en", "welcomeMessage", true);
 						game.user.setFlag("outgunned-csb-en", "lastVersion", game.modules.get("outgunned-csb-en").version);
 						setTimeout(() => {
-							game.macros.getName('Roll - Reroll - All In (Integrado)').update({permission:{default:2}});
+							game.macros.getName('Roll - Reroll - All In (Integrado)').update({ownership:{default:2}});
 						}, 5000);
 					});
 				}
@@ -196,7 +196,7 @@ Hooks.once("ready", function() {
 						}, 500);
 						game.user.setFlag("outgunned-csb-en", "lastVersion", game.modules.get("outgunned-csb-en").version);
 						setTimeout(() => {
-							game.macros.getName('Roll - Reroll - All In (Integrado)').update({permission:{default:2}});
+							game.macros.getName('Roll - Reroll - All In (Integrado)').update({ownership:{default:2}});
 						}, 5000);
 					});
 				}
