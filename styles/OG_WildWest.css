@@ -1,0 +1,17 @@
+/* CSS para Outgunned Wild West
+https://codepen.io/sosuke/pen/Pjoqqp
+*/
+:root {
+	--theme-color:  #cb6c00;
+	--director-color: #005fcb;
+	--background-imagen: url('../assets/Fondo Outgunned_CaD.webp')center;
+	--filter-color: invert(39%) sepia(85%) saturate(853%) hue-rotate(4deg) brightness(96%) contrast(103%);
+	--spotlight-icon: url('../assets/Spotlight_WildWest_black.webp');
+	--adrenaline-text: '¡Adrenaline!';
+	--bullet-text: 'Bullet';
+	--bullet-image: url('../assets/checkbala_black.webp');
+	--backup-text: 'Backup';
+	--backup-image: url('../assets/checkrefuerzos_black.webp');
+	--bluff-text: 'Bluff';
+	--bluff-image: url('../assets/checkfarol_black.webp');
+}

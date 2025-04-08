@@ -1,0 +1,17 @@
+/* CSS para Outgunned Army of Evil
+https://codepen.io/sosuke/pen/Pjoqqp
+*/
+:root {
+	--theme-color:  #623d91;
+	--director-color: #b3251b;
+	--background-imagen: url('../assets/Fondo Outgunned_MidnightWars.webp')center;
+	--filter-color: invert(24%) sepia(19%) saturate(3828%) hue-rotate(238deg) brightness(95%) contrast(86%);
+	--spotlight-icon: url('../assets/Spotlight_ArmyofEvil_black.webp');
+	--adrenaline-text: '¡Adrenaline!';
+	--bullet-text: 'Bullet';
+	--bullet-image: url('../assets/checkbala_black.webp');
+	--backup-text: 'Backup';
+	--backup-image: url('../assets/checkrefuerzos_black.webp');
+	--bluff-text: 'Bluff';
+	--bluff-image: url('../assets/checkfarol_black.webp');
+}

@@ -1,7 +1,7 @@
 {
   "id": "outgunned-csb-en",
   "title": "Outgunned (CSB) (EN)",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "compatibility": {
     "minimum": "11",
     "verified": "12.331"
@@ -80,5 +80,5 @@
   ],
   "url": "https://github.com/pedrobaringo/outgunned-csb-en",
   "manifest": "https://github.com/pedrobaringo/outgunned-csb-en/releases/latest/download/module.json",
-  "download": "https://github.com/pedrobaringo/outgunned-csb-en/releases/download/1.1.1/outgunned-csb-en.zip"
+  "download": "https://github.com/pedrobaringo/outgunned-csb-en/releases/download/1.2.0/outgunned-csb-en.zip"
 }

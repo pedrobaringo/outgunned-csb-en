@@ -2949,6 +2949,225 @@ div.custom-system-sheet-actions:first-of-type {
 	border-left:0px;
 	border-right:0px;
 }
+.actionflickspanel {
+	gap:0px;
+}
+.starshipcheckbox input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+	margin:0px;
+    background: url('../assets/starship_black.webp');
+	background-size:30px auto;
+	background-repeat: no-repeat;
+	flex: 0 0 45px;
+    width: 45px;
+    height: 30px;
+    cursor: pointer;
+	filter: var(--filter-color);
+}
+.starshipcheckbox input[type="checkbox"]:checked {
+    background: url('../assets/starship_black_checked.webp');
+	background-size:30px auto;
+	background-repeat: no-repeat;
+	filter: var(--filter-color);
+}
+.starshipcheckbox {
+	align-items: center;
+	margin:0px;
+}
+.panelvehiculosdib {
+    display: grid;
+    gap: 0px;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    margin-top: 5px;
+}
+.bicicheck input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+	margin:0px;
+    background: url('../assets/Bici_black.webp');
+	background-size:30px auto;
+	background-repeat: no-repeat;
+	flex: 0 0 30px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+	filter: var(--filter-color);
+	text-align: right;
+}
+.bicicheck input[type="checkbox"]:checked {
+    background: url('../assets/Bici_black_checked.webp');
+	background-size:30px auto;
+	background-repeat: no-repeat;
+	filter: var(--filter-color);
+}
+.bicicheck {
+	align-items: center;
+	margin:0px;
+}
+.paneldescdeb {
+    display: grid;
+    grid-template-columns: 19% 81%;
+    gap: 0px;
+    margin: 0px 0px 2px 0px;
+    border-bottom: 2px solid var(--theme-color);
+}
+.livespanel {
+    width: 180px;
+    height: 180px;
+    background: url(../assets/LivesBack.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    margin: 0px;
+    filter: var(--filter-color);
+}
+.lifecheck1 {
+	width: 51px;
+    height: 63px;
+    display: block;
+    position: absolute;
+    top: 23px;
+    left: 11px;
+}
+.lifecheck1 input[type="checkbox"]:checked {
+    -webkit-appearance: initial;
+    appearance: initial;
+    border-color: var(--theme-color);
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 50%;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    width: 51px;
+    height: 63px;
+}
+.lifecheck1 input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    position: absolute;
+    left: 0px;
+    border-color: var(--theme-color);
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 50%;
+    margin: 0px;
+    padding: 0px;
+	background: url(../assets/Lives1.webp);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    background-color: transparent;
+    width: 51px;
+    height: 63px;
+    cursor: pointer;
+}
+.lifecheck2 {
+	width: 51px;
+    height: 63px;
+    display: block;
+    position: absolute;
+    top: 42px;
+    left: 90px;
+}
+.lifecheck2 input[type="checkbox"]:checked {
+    -webkit-appearance: initial;
+    appearance: initial;
+    border-color: var(--theme-color);
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 50%;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    width: 51px;
+    height: 63px;
+}
+.lifecheck2 input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    position: absolute;
+    left: 0px;
+    border-color: var(--theme-color);
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 50%;
+    margin: 0px;
+    padding: 0px;
+	background: url(../assets/Lives2.webp);
+    background-repeat: no-repeat;
+    background-size: 50%;
+	background-position: center;
+    background-color: transparent;
+    width: 51px;
+    height: 63px;
+    cursor: pointer;
+}
+.lifecheck3 {
+	width: 51px;
+    height: 63px;
+    display: block;
+    position: absolute;
+    top: 105px;
+    left: 38px;
+}
+.lifecheck3 input[type="checkbox"]:checked {
+    -webkit-appearance: initial;
+    appearance: initial;
+    border-color: var(--theme-color);
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 50%;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    width: 51px;
+    height: 63px;
+}
+.lifecheck3 input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    position: absolute;
+    left: 0px;
+    border-color: var(--theme-color);
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 50%;
+    margin: 0px;
+    padding: 0px;
+	background: url(../assets/Lives3.webp);
+    background-repeat: no-repeat;
+    background-size: 50%;
+	background-position: center;
+    background-color: transparent;
+    width: 51px;
+    height: 63px;
+    cursor: pointer;
+}
+.dadosquickdraw input[type="text"]{
+	margin:0px;
+	width:30%;
+}
+.dadosquickdraw button:nth-child(1){
+	display:none;
+}
+.dadosquickdraw button:nth-child(6){
+	display:none;
+}
+.quickdraw img{
+	display:none;
+}
+.quickdraw a{
+	background-color: transparent;
+	border:0px;
+	width:100%;
+}
+.quickdraw span{
+	width:100%;
+	text-align:center;
+}
 :root {
 	--theme-color:  #b3251b;
 	--director-color: #004f82;

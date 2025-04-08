@@ -30,7 +30,18 @@ Hooks.once("init", function() {
 			"ghosthunters": "Ghost hunters",
 			"midnightwars": "Midnight Wars",
 			"neonnoir": "Neon Noir",
-			"everything": "Everything at once"
+			"everything": "Everything at once",
+			"starknights": "Star Knights",
+			"oldones": "Old Ones",
+			"wildwest": "Wild West",
+			"darklight": "Dark Light",
+			"mightyswords": "Mighty Swords",
+			"district77": "District 77",
+			"dinostorm": "Dino Storm",
+			"furiouswasteland": "Furious Wasteland",
+			"armyofevil": "Army of Evil",
+			"quacktales": "Quack Tales",
+			"insertcoin": "Insert Coin"
 		},
 		default: "outgunned",
 		onChange: value => {
@@ -76,6 +87,39 @@ Hooks.once("init", function() {
 			} else if (value=="everything") {
 				console.log(value);
 				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_Everything.css");
+			} else if (value=="starknights") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_StarKnights.css");
+			} else if (value=="oldones") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_OldOnes.css");
+			} else if (value=="wildwest") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_WildWest.css");
+			} else if (value=="darklight") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_DarkLight.css");
+			} else if (value=="mightyswords") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_MightySwords.css");
+			} else if (value=="district77") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_District77.css");
+			} else if (value=="dinostorm") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_DinoStorm.css");
+			} else if (value=="furiouswasteland") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_FuriousWasteland.css");
+			} else if (value=="armyofevil") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_ArmyofEvil.css");
+			} else if (value=="quacktales") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_QuackTales.css");
+			} else if (value=="insertcoin") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_InsertCoin.css");
 			}
 		}
 	})
@@ -145,6 +189,9 @@ Hooks.once("ready", function() {
 						game.user.setFlag("outgunned-csb-en", "lastVersion", game.modules.get("outgunned-csb-en").version);
 						setTimeout(() => {
 							game.macros.getName('Roll - Reroll - All In (Integrado)').update({ownership:{default:2}});
+							game.macros.getName('Roll - Reroll - All In (Integrado) (QuickDraw- Shot)').update({ownership:{default:2}});
+							game.macros.getName('Roll - Reroll - All In (Integrado) (QuickDraw-Draw)').update({ownership:{default:2}});
+							game.macros.getName('Roll - Reroll - All In (Integrado) (QuickDraw-Stareoff)').update({ownership:{default:2}});
 						}, 5000);
 					});
 				}
@@ -197,6 +244,9 @@ Hooks.once("ready", function() {
 						game.user.setFlag("outgunned-csb-en", "lastVersion", game.modules.get("outgunned-csb-en").version);
 						setTimeout(() => {
 							game.macros.getName('Roll - Reroll - All In (Integrado)').update({ownership:{default:2}});
+							game.macros.getName('Roll - Reroll - All In (Integrado) (QuickDraw- Shot)').update({ownership:{default:2}});
+							game.macros.getName('Roll - Reroll - All In (Integrado) (QuickDraw-Draw)').update({ownership:{default:2}});
+							game.macros.getName('Roll - Reroll - All In (Integrado) (QuickDraw-Stareoff)').update({ownership:{default:2}});
 						}, 5000);
 					});
 				}

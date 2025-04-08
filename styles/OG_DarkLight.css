@@ -1,0 +1,17 @@
+/* CSS para Outgunned Dark Light
+https://codepen.io/sosuke/pen/Pjoqqp
+*/
+:root {
+	--theme-color:  #623d91;
+	--director-color: #6c913d;
+	--background-imagen: url('../assets/Fondo Outgunned_GreatPowers.webp')center;
+	--filter-color: invert(26%) sepia(27%) saturate(2452%) hue-rotate(235deg) brightness(90%) contrast(87%);
+	--spotlight-icon: url('../assets/Spotlight_DarkLight_black.webp');
+	--adrenaline-text: '¡Adrenaline!';
+	--bullet-text: 'Bullet';
+	--bullet-image: url('../assets/checkbala_black.webp');
+	--backup-text: 'Blessing/Blasphemy';
+	--backup-image: url('../assets/checkblessing_black.webp');
+	--bluff-text: 'Bluff';
+	--bluff-image: url('../assets/checkfarol_black.webp');
+}

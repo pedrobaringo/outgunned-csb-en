@@ -1,0 +1,17 @@
+/* CSS para Outgunned Star Knights
+https://codepen.io/sosuke/pen/Pjoqqp
+*/
+:root {
+	--theme-color:  #004f82;
+	--director-color: #823300;
+	--background-imagen: url('../assets/Fondo Outgunned_StarRaiders.webp')center;
+	--filter-color: invert(16%) sepia(40%) saturate(6608%) hue-rotate(189deg) brightness(90%) contrast(101%);
+	--spotlight-icon: url('../assets/Spotlight_StarKnights_black.webp');
+	--adrenaline-text: '¡Adrenaline!';
+	--bullet-text: 'Bullet';
+	--bullet-image: url('../assets/checkbala_black.webp');
+	--backup-text: 'Backup';
+	--backup-image: url('../assets/checkrefuerzos_black.webp');
+	--bluff-text: 'Bluff';
+	--bluff-image: url('../assets/checkfarol_black.webp');
+}

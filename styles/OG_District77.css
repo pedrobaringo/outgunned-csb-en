@@ -1,0 +1,17 @@
+/* CSS para Outgunned District 77
+https://codepen.io/sosuke/pen/Pjoqqp
+*/
+:root {
+	--theme-color:  #004f82;
+	--director-color: #823300;
+	--background-imagen: url('../assets/Fondo Outgunned_AKindofMagic.webp')center;
+	--filter-color: invert(21%) sepia(40%) saturate(3109%) hue-rotate(181deg) brightness(97%) contrast(102%);
+	--spotlight-icon: url('../assets/Spotlight_District77_black.webp');
+	--adrenaline-text: '¡Adrenaline!';
+	--bullet-text: 'Bullet';
+	--bullet-image: url('../assets/checkbala_black.webp');
+	--backup-text: 'Backup';
+	--backup-image: url('../assets/checkrefuerzos_black.webp');
+	--bluff-text: 'Bluff';
+	--bluff-image: url('../assets/checkfarol_black.webp');
+}
