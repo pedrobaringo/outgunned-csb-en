@@ -14,12 +14,21 @@
     font-family: "SkullSymbol";
     src: url("../assets/Outgunnedsymbolfont-Regular.otf");
 }
-.custom-system-actor-content {
+.sheet .window-content {
 	background: var(--background-imagen);
 	background-repeat: no-repeat;
  	background-size: 100% 100%;
 	font-family:'Futura';
 	color: var(--theme-color);
+	padding:1rem;
+}
+.dialog .window-content {
+	background: var(--background-imagen-chat);
+	background-repeat: no-repeat;
+ 	background-size: 100% 100%;
+	font-family:'Futura';
+	color: var(--theme-color);
+	padding:1rem;		  
 }
 .mayustext {
 	text-transform: uppercase;
@@ -30,6 +39,7 @@
 }
 .marginzero {
 	margin:0px;
+	justify-content: flex-start;							 
 }
 .desctexts {
 	color:black;
@@ -53,6 +63,7 @@
 	border-width: 0px 0px 0px 0px;
 	padding:3px 0px 3px 0px;
 	margin:0px;
+	max-height:28px;				 
 }
 .labcamporev {
 	font-size:1.3em;
@@ -71,6 +82,8 @@
 }
 .labeltitulo {
 	font-size:1.5em;
+	max-height:27px;
+	justify-content: center;				 
 }
 .paneldesc1 div{
 	margin:0px
@@ -288,7 +301,6 @@
 	font-size: 0.7em;
 }
 .paneldescaguante div{
-	margin:-20px 0px -20px 0px;
 	padding:0px;
 }
 .panelcolumna1 {
@@ -354,6 +366,7 @@
 	border:0px;
 	padding:0px;
 	font-size:1.2em;
+	color: #fffefc;				
 }
 .tablarasgos tr td:nth-child(1) a img{
 	display: none;
@@ -381,6 +394,7 @@
 	color:#fffefc;
 	background-color: var(--theme-color);
 	height:100%;
+	width:100%;			
 }
 .tablarasgos tr td:nth-child(3) {
 	background-image: url(../assets/BordeOndaSingle_black.webp);
@@ -515,13 +529,16 @@
 	color: #4a4a49;
 }
 .logrostext {
-	top:-30px;
+	top:-20px;
 	pointer-events: none
 }
 .teves1 {
 	display:grid;
 	grid-template-columns: 50% 50%;
 	gap:0px;
+}
+.alignright {
+	justify-content: flex-end;
 }
 .tevessubder {
 	display:grid;
@@ -958,6 +975,9 @@
 	grid-template-columns: 20% 40% 40%;
 	margin-left:10px;
 }
+.panelcashalmride .flex-group-center {
+	justify-content: flex-start;
+}									  
 .almacentable table{
 	background:transparent;
 	border:0px;
@@ -1164,10 +1184,18 @@
 	margin:0px;
 }
 .spotlightbutton {
-	top:10%;
-	margin-left:3px;
- width:79px;
- border-radius:50%;
+	top:0%;
+	margin-left:13px;
+	width:79px;
+	border-radius:50%;
+}
+.spotlightbutton a{
+    min-height:79px;
+	min-width:79px;
+    max-height:79px;
+	max-width:79px;
+    background-color:transparent;
+    border:0px;
 }
 .spotlightbutton a{
 	border-radius:50%;
@@ -1187,6 +1215,14 @@
 	border:0px;
 	border-bottom:2px solid var(--theme-color);
 	border-radius:0px;
+	font-family:'Futura';
+}
+.itemname input[type="text"]{
+	background: transparent;
+	border:0px;
+	border-bottom:2px solid var(--theme-color);
+	border-radius:0px;
+	font-family:'Futura';			  
 }
 .chat-message .message-content h1{
 font-family:'Futura';
@@ -1280,8 +1316,7 @@ font-family:'Futura';
     background-size: 50px 50px;
     font-weight: normal;
 	box-shadow: 2px 2px 5px black;
-	margin:5px;
-				
+	margin:5px;		
 }
 .d6_og_rem {
 	display: inline-block;
@@ -1297,12 +1332,10 @@ font-family:'Futura';
 	position: relative;
     line-height: 100%;
     background-repeat: no-repeat;
-	  
     background-size: 40px 40px;
     font-weight: normal;
 	box-shadow: 2px 2px 5px black;				
-	margin:5px;
-					
+	margin:5px;			
 }
 .dice-rolls_outgunned {
 	padding:0px;
@@ -1364,10 +1397,10 @@ font-family:'Futura';
 	display:grid;
 	grid-template-columns: auto auto auto;
 }
-.custom-system-user-input-button[data-action="sub-10"] {
+.custom-system-user-input-button[data-inputaction="sub-10"] {
 	display:none;
 }
-.custom-system-user-input-button[data-action="add-10"] {
+.custom-system-user-input-button[data-inputaction="add-10"] {
 	display:none;
 }
 .custom-system-user-inputs tr:nth-child(even) {
@@ -1469,6 +1502,8 @@ font-family:'Futura';
 	background-color:white;
 	border:1px solid var(--director-color);
 	border-radius:3px;
+	width:20px;
+	height:20px;		
 }
 .chaseblue input[type="checkbox"]:checked {
 	background-color:var(--director-color);
@@ -1486,6 +1521,8 @@ font-family:'Futura';
 	background-color:white;
 	border:1px solid var(--theme-color);
 	border-radius:3px;
+	width:20px;
+	height:20px;		
 }
 .chasered input[type="checkbox"]:checked {
 	background-color:var(--theme-color);
@@ -1807,17 +1844,20 @@ font-family:'Futura';
 	bottom:0px;
 	left:19%;
 }
+.panelmisiondoble .flex-group-center {
+  justify-content: flex-start;
+}
 .fondobalablack {
 	margin:0px;
     background: var(--bullet-image);
 	background-size:75px;
 	background-repeat: no-repeat;
-    width: 75px;
-    height: 75px;
+    min-width: 75px;
+    min-height: 75px;
 	filter: var(--filter-color);
 	position:relative;
-	top:-0%;
-	left:4%;
+	top:0%;
+	left:22%;
 	z-index:10;
 }
 .checkbala input[type="checkbox"] {
@@ -1854,12 +1894,12 @@ font-family:'Futura';
     background: var(--backup-image);
 	background-size:75px;
 	background-repeat: no-repeat;
-    width: 75px;
-    height: 75px;
+    min-width: 75px;
+    min-height: 75px;
 	filter: var(--filter-color);
 	position:relative;
-	top:-0%;
-	left:4%;
+	top:0%;
+	left:22%;
 	z-index:10;
 }
 .checkrefuerzos input[type="checkbox"] {
@@ -1897,12 +1937,12 @@ font-family:'Futura';
     background: var(--bluff-image);
 	background-size:75px;
 	background-repeat: no-repeat;
-    width: 75px;
-    height: 75px;
+    min-width: 75px;
+    min-height: 75px;
 	filter: var(--filter-color);
 	position:relative;
-	top:-0%;
-	left:4%;
+	top:0%;
+	left:22%;
 	z-index:10;
 }
 .checkfarol input[type="checkbox"] {
@@ -2009,16 +2049,19 @@ font-family:'Futura';
 	grid-column: 2 / span 1;
 	order:2;
 	padding:0px 0px 0px 0px;
+	width: 100%;		 
 }
 .tablaaccesp tr td:nth-child(3){
 	grid-column: 3 / span 1;
 	order:3;
 	padding:0px 0px 0px 0px;
+	width: 100%;		 
 }
 .tablaaccesp tr td:nth-child(4){
 	grid-column: 4 / span 1;
 	order:4;
 	padding:0px;
+	width: 100%;		 
 }
 .tablaaccesp tr td:nth-child(5){
 	grid-column: 5 / span 1;
@@ -2046,6 +2089,7 @@ font-family:'Futura';
 	border:0px;
 	padding:0px;
 	font-size:1.2em;
+	color: #fffefc;			
 }
 .tablaaccesp tr td:nth-child(1) a img{
 	display: none;
@@ -2219,6 +2263,9 @@ font-family:'Futura';
 	display:grid;
 	grid-template-columns: 40% 55%
 }
+.gapnul {
+	gap:0px;
+}
 .paneldescdercomp {
 	display:grid;
 	grid-template-columns: 55% 45%;
@@ -2369,10 +2416,6 @@ font-family:'Futura';
 .tabbedoutgunned .tabs .item:hover {
     text-shadow: 0 0 10px var(--theme-color);
 }
-.adrentext:after {
-	content: var(--adrenaline-text);
-	margin:0px;
-}
 .adrencomp {
 	margin:0px;
 }
@@ -2393,17 +2436,6 @@ font-family:'Futura';
     gap: 0px;
     margin: 0px 0px 2px 0px;
     border-bottom: 2px solid var(--theme-color);
-}
-.header-fields {
-	position:relative;
-}
-div.custom-system-sheet-actions:first-of-type {
-	top:30px;
-}
-.custom-system-sheet-actions {
-	position:absolute;
-	right:0px;
-	top:0px;
 }
 .tablarmasadvpan {
 	margin-left:10px;
@@ -2610,6 +2642,9 @@ div.custom-system-sheet-actions:first-of-type {
 	margin-left:10px;
 	position:relative;
 }
+.panelmochibolsa .flex-group-center, .panelcashalmridesuper  .flex-group-center {
+	justify-content: flex-start;
+}
 .backgroundmochila {
 	position:absolute;
 	background: url('../assets/mochila.webp');
@@ -2645,6 +2680,9 @@ div.custom-system-sheet-actions:first-of-type {
 	display:grid;
 	grid-template-columns: 46% 54%;
 	margin-right:3%;
+}
+.paneltraveldoble .flex-group-center {
+	justify-content: flex-start;
 }
 .panelheatrival {
 	display:grid;
@@ -2686,15 +2724,15 @@ div.custom-system-sheet-actions:first-of-type {
 	margin-bottom:10px;
 }
 .checkadv1 {
-	top:9%;
+	top:-4%;
 	left:-15.5%;
 }
 .checkadv2 {
-	top:31%;
+	top:-9.5%;
 	left:-4%;
 }
 .checkadv3 {
-	top:50%;
+	top:-18.5%;
 	left:3%;
 }
 .panelheatround {
@@ -2714,7 +2752,7 @@ div.custom-system-sheet-actions:first-of-type {
     height: 0px;
     position: relative;
     margin: auto;
-    top: 15%;
+    top: 0%;
     z-index: 31;
 }
 .paneltensheat {
@@ -3163,11 +3201,399 @@ div.custom-system-sheet-actions:first-of-type {
 	background-color: transparent;
 	border:0px;
 	width:100%;
+	color: var(--theme-color);					   
 }
 .quickdraw span{
 	width:100%;
 	text-align:center;
 }
+
+.labpow {
+    width: 25px;
+	color: #d36602;
+}
+.checkaguantepow input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    margin: 9px 0px 0px 0px;
+    background: url(../assets/Pow_unchecked.webp);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    flex: 0 0 30px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.checkaguantepow input[type="checkbox"]:checked {
+    background: url(../assets/Pow_checked.webp);
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+.checkpower input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    margin: 5px 0px 0px 0px;
+    background: url(../assets/Powercheck_unchecked.webp);
+    background-size: 19px;
+    background-repeat: no-repeat;
+    flex: 0 0 19px;
+    width: 19px;
+    height: 29px;
+    cursor: pointer;
+    filter: var(--filter-color);
+}
+.checkpower input[type="checkbox"]:checked {
+    background: url(../assets/Powercheck_checked.webp);
+    filter: var(--filter-color);
+    background-size: 19px;
+    background-repeat: no-repeat;
+}
+.panelcashalmridesuper {
+	display: grid;
+    gap: 0px;
+    grid-template-columns: 50% 50%;
+    margin-left: 10px;
+}
+.sinpodercheck  input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    margin: 5px 0px 0px 0px;
+    background: url(../assets/Powerless_unchecked.webp);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    flex: 0 0 50px;
+    width: 50px;
+    height: 90px;
+    cursor: pointer;
+}
+.sinpodercheck input[type="checkbox"]:checked {
+    background: url(../assets/Powerless_checked.webp);
+    background-size: 50px;
+    background-repeat: no-repeat;
+}
+.superpowerpanel {
+	margin-top:5px;
+}
+.panelsinpoderes {
+	width:120%;
+}
+.spotlightpanelsuper {
+	width: 200px;
+    height: 110px;
+    border-radius: 0%;
+    background: url(../assets/Spotlightsupers.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    margin: 0px 0px 0px 0px;
+    filter: var(--filter-color);
+	z-index:0;
+}
+.spotlightbuttonsuper {
+    top: 0%;
+	left:9%;
+    margin-left: 3px;
+    width: 87px;
+	height: 100px;
+    border-radius: 0%;
+    background-color: transparent;
+}
+.spotlightbuttonsuper a {
+    border-radius: 0%;
+	width: 87px;
+	height: 100px;
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: transparent;
+    border:0px;
+}
+.spotlightbuttonsuper button.custom-system-label-root {
+    background: transparent;
+    border: 0px;
+    border-radius: 0%;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+}
+.spotlightpanelbacksuper {
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    position: relative;
+    margin: 0px;
+    bottom: -45px;
+    left: 40px;
+	z-index:1;
+}
+.checkspotsuper {
+    width: 20px;
+	height:20px;
+    display: block;
+    position: absolute;
+    top: 46.2%;
+    left: 41%;
+}
+.checkspotsuper input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    border-width: 0px;
+    margin: 0px;
+    background: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+	width: 15px;
+    height: 15px;
+    cursor: pointer;
+	z-index:100;
+}
+.checkspotsuper input[type="checkbox"]:checked {
+    -webkit-appearance: initial;
+    appearance: initial;
+    margin: 0px;
+    background: url(../assets/Check_Spotlightsupers_Checked.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+	filter: var(--filter-color);
+	width: 15px;
+    height: 15px;
+}
+.spotlight1super {
+    transform:translate(331% ,74%);
+}
+.spotlight2super {
+	transform:translate(444% ,74%);
+}
+.spotlight3super {
+	transform:translate(557% ,74%);
+}
+.cargchecksup {
+	margin:0px;
+}
+.cargchecksup input[type="checkbox"]{
+	-webkit-appearance: initial;
+    appearance: initial;
+    margin-top:7px;
+	border: 2px solid #bec1da;
+    background: transparent;
+    cursor: pointer;
+    width:20px;
+    height:20px;
+}
+.cargchecksup input[type="checkbox"]:checked{
+	-webkit-appearance: initial;
+    appearance: initial;
+    margin-top:7px;
+	border: 2px solid #bec1da;
+    background: #1e4b88;
+    cursor: pointer;
+}
+.tablarmasadvpansup {
+	margin-left:10px;
+}
+.tablarmasadvpansup table {
+	background:transparent;
+	border:0px;
+	border-collapse: collapse;
+}
+.tablarmasadvpansup .custom-system-dynamicRow {
+	display:grid;
+	grid-template-columns: 37% 49% 4% 4% 4% 5%;
+}
+.tablarmasadvpansup .custom-system-dynamicRow div {
+	align-items:center;
+	padding:0px;
+}
+.tablarmasadvpansup table tr:nth-child(2) td:not(:last-child){
+	border-top:1px solid black;
+}
+.tablarmasadvpansup table tr:nth-child(even) td:first-child{
+	border-right:1px solid #b2b2b7;
+	border-left:1px solid black;
+	border-bottom:1px solid black;
+	background-color:white;
+}
+.tablarmasadvpansup table tr:nth-child(even) td:nth-child(2){
+	border-right:1px solid black;
+	border-bottom:1px solid black;
+	background-color:white;
+}
+.tablarmasadvpansup table tr:nth-child(even) td:nth-child(3){
+	border-right:0px solid #b2b2b7;
+	border-bottom:1px solid black;
+	background-color:white;
+	padding:0px;
+}
+.tablarmasadvpansup table tr:nth-child(even) td:nth-child(4){
+	border-right:0px solid #b2b2b7;
+	border-bottom:1px solid black;
+	background-color:white;
+	padding:0px;
+}
+.tablarmasadvpansup table tr:nth-child(even) td:nth-child(5){
+	border-right:1px solid #b2b2b7;
+	border-bottom:1px solid black;
+	background-color:white;
+	padding:0px;
+}
+.tablarmasadvpansup table tr:last-child{
+	background-color:transparent;
+}
+.tablarmasadvpansup table tr:nth-child(odd) td:first-child{
+	border-right:1px solid #b2b2b7;
+	border-left:1px solid black;
+	border-bottom:1px solid black;
+	background-color:#f6f6f6;
+}
+.tablarmasadvpansup table tr:nth-child(odd) td:nth-child(2){
+	border-right:1px solid black;
+	border-bottom:1px solid black;
+	background-color:#f6f6f6;
+}
+.tablarmasadvpansup table tr:nth-child(odd) td:nth-child(3){
+	border-right:0px solid #b2b2b7;
+	border-bottom:1px solid black;
+	background-color:#f6f6f6;
+	padding:0px;
+}
+.tablarmasadvpansup table tr:nth-child(odd) td:nth-child(4){
+	border-right:0px solid #b2b2b7;
+	border-bottom:1px solid black;
+	background-color:#f6f6f6;
+	padding:0px;
+}
+.tablarmasadvpansup table tr:nth-child(odd) td:nth-child(5){
+	border-right:1px solid #b2b2b7;
+	border-bottom:1px solid black;
+	background-color:#f6f6f6;
+	padding:0px;
+}
+.tablarmasadvpansup .custom-system-dynamicRow td:nth-child(6){
+	border:0px;
+	background:transparent;
+}
+.tablarmasadvpansup table tr:last-child td:first-child{
+	border-width: 0px 0px 0px 0px;
+}
+.tablarmasadvpansup table tr:last-child  td:first-child{
+	background-color:transparent;
+	border:0px;
+}
+.tablarmasadvpansup table tr:last-child  td:last-child{
+	background-color:transparent;
+	border:0px;
+}
+.tablarmasadvpansup table tr:first-child  td:first-child{
+	background-color:transparent;
+	border:0px;
+}
+.tablarmasadvpansup table tr:first-child  td:nth-child(2){
+	background-color:transparent;
+	border:0px;
+}
+.tablarmasadvpansup table tr:first-child  td:nth-child(3){
+	background-color:transparent;
+	border:0px;
+}
+.tablarmasadvpansup table tr:first-child  td:nth-child(4){
+	background-color:transparent;
+	border:0px;
+}
+.tablarmasadvpansup table tr:first-child  td:nth-child(5){
+	background-color:transparent;
+	border:0px;
+}
+.tablarmasadvpansup table tr:first-child  td:nth-child(6){
+	background-color:transparent;
+	border:0px;
+}
+.tablarmasadvpansup table tr:first-child  td:nth-child(7){
+	background-color:transparent;
+	border:0px;
+}
+.tablarmasadvpansup table tr:first-child  td:nth-child(9){
+	background-color:transparent;
+	border:0px;
+}
+.tablarmasadvpansup table tr:first-child  td:nth-child(8){
+	background-color:transparent;
+	border:0px;
+}
+.tablarmasadvpansup table tr:first-child{
+	display:none;
+}
+.tablequipadvpansup {
+	margin-left:10px;
+}
+.tablequipadvpansup table {
+	background:transparent;
+	border:0px;
+	border-collapse: collapse;
+}
+.tablequipadvpansup .custom-system-dynamicRow {
+	display:grid;
+	grid-template-columns: 28% 69% 3%;
+}
+.tablequipadvpansup table tr:nth-child(even):not(:last-child) td:not(:last-child){
+	background-color:white;
+}
+.tablequipadvpansup table tr:nth-child(odd):not(:first-child):not(:last-child) td:not(:last-child){
+	background-color:#f6f6f6;
+}
+.tablequipadvpansup .custom-system-dynamicRow div {
+	align-items:center;
+	padding:0px;
+}
+.panelcashtopsup {
+	display: grid;
+    grid-template-columns:auto auto;
+	gap:7px;
+	font-size:20px;
+}
+.paneldescalias {
+	display: grid;
+	grid-template-columns: 10% 90%;
+	gap:0px;
+	margin:0px 0px 2px 0px;
+	border-bottom:2px solid var(--theme-color);
+}
+.paneldescadrenal {
+    display: grid;
+    grid-template-columns: 21% 79%;
+    gap: 0px;
+    margin: 0px 0px 2px 0px;
+}
+ .cargcheck input[type="checkbox"]::before,.maletincheck input[type="checkbox"]::before,.cashcheck input[type="checkbox"]::before,.checkarmorgris input[type="checkbox"]::before,.checkarmornorm input[type="checkbox"]::before,.motocheck input[type="checkbox"]::before,.cochecheck input[type="checkbox"]::before,.barcocheck input[type="checkbox"]::before,.helicheck input[type="checkbox"]::before,.tanquecheck input[type="checkbox"]::before,.chaseblue input[type="checkbox"]::before,.chasered input[type="checkbox"]::before,.termocheck input[type="checkbox"]::before,.panelridearmordirect input[type="checkbox"]::before,.panelvehiculosdibdirect input[type="checkbox"]::before,.checkbala input[type="checkbox"]::before,.checkrefuerzos input[type="checkbox"]::before,.checkfarol input[type="checkbox"]::before,.checkaguantehotenem input[type="checkbox"]::before,.goldcheck input[type="checkbox"]::before,.checkbelmont input[type="checkbox"]::before,.checkbladebullet input[type="checkbox"]::before,.checkbluff input[type="checkbox"]::before,.checksuerte input[type="checkbox"]::before,.checkadv input[type="checkbox"]::before,.roundheatcheck input[type="checkbox"]::before,.starshipcheckbox input[type="checkbox"]::before,.bicicheck input[type="checkbox"]::before,.lifecheck1 input[type="checkbox"]::before,.lifecheck2 input[type="checkbox"]::before,.lifecheck3 input[type="checkbox"]::before,.checkaguantepow input[type="checkbox"]::before,.checkpower input[type="checkbox"]::before,.sinpodercheck input[type="checkbox"]::before,.checkspotsuper input[type="checkbox"]::before,.cargchecksup input[type="checkbox"]::before,.checkbox1 input[type="checkbox"]::before,.checkbox2 input[type="checkbox"]::before,.checkaguantenorm input[type="checkbox"]::before,.checkaguantebad input[type="checkbox"]::before,.checkaguantehot input[type="checkbox"]::before,.checkspot input[type="checkbox"]::before,.checkadren input[type="checkbox"]::before,.ruletacheck input[type="checkbox"]::before {
+    content: "";
+}
+.checkbox1 input[type="checkbox"]:checked::after, .checkbox2 input[type="checkbox"]:checked::after, .checkaguantenorm input[type="checkbox"]:checked::after, .checkaguantebad input[type="checkbox"]:checked::after, .checkaguantehot input[type="checkbox"]:checked::after, .checkspot input[type="checkbox"]:checked::after, .checkadren input[type="checkbox"]:checked::after, .ruletacheck input[type="checkbox"]:checked::after, .cargcheck input[type="checkbox"]:checked::after, .maletincheck input[type="checkbox"]:checked::after, .cashcheck input[type="checkbox"]:checked::after, .checkarmorgris input[type="checkbox"]:checked::after, .checkarmornorm input[type="checkbox"]:checked::after, .motocheck input[type="checkbox"]:checked::after, .cochecheck input[type="checkbox"]:checked::after, .barcocheck input[type="checkbox"]:checked::after, .helicheck input[type="checkbox"]:checked::after, .tanquecheck input[type="checkbox"]:checked::after, .chaseblue input[type="checkbox"]:checked::after, .chasered input[type="checkbox"]:checked::after, .termocheck input[type="checkbox"]:checked::after, .panelridearmordirect input[type="checkbox"]:checked::after, .panelvehiculosdibdirect input[type="checkbox"]:checked::after, .checkbala input[type="checkbox"]:checked::after, .checkrefuerzos input[type="checkbox"]:checked::after, .checkfarol input[type="checkbox"]:checked::after, .checkaguantehotenem input[type="checkbox"]:checked::after, .goldcheck input[type="checkbox"]:checked::after, .checkbelmont input[type="checkbox"]:checked::after, .checkbladebullet input[type="checkbox"]:checked::after, .checkbluff input[type="checkbox"]:checked::after, .checksuerte input[type="checkbox"]:checked::after, .checkadv input[type="checkbox"]:checked::after, .roundheatcheck input[type="checkbox"]:checked::after, .starshipcheckbox input[type="checkbox"]:checked::after, .bicicheck input[type="checkbox"]:checked::after, .lifecheck1 input[type="checkbox"]:checked::after, .lifecheck2 input[type="checkbox"]:checked::after, .lifecheck3 input[type="checkbox"]:checked::after, .checkaguantepow input[type="checkbox"]:checked::after, .checkpower input[type="checkbox"]:checked::after, .sinpodercheck input[type="checkbox"]:checked::after, .checkspotsuper input[type="checkbox"]:checked::after, .cargchecksup input[type="checkbox"]:checked::after {
+    content: "";
+}
+input[type=text] {
+		box-shadow:0px 0px;
+}
+table tbody tr:nth-child(even) {
+    background-color: transparent;
+}
+table th, table td {
+    padding: 0px;
+}
+.panelelecciontipo{
+  display:grid;
+  grid-template-columns:33% 33% 33%;
+}
+.panelelecciontipo div:nth-child(1), .panelelecciontipo div:nth-child(2), .panelelecciontipo div:nth-child(3) {
+  display:grid;
+  grid-template-columns:100%;
+}
+.panelelecciontipo input {
+  justify-content: center;
+  text-align: center;
+}
+
 :root {
 	--theme-color:  #b3251b;
 	--director-color: #004f82;

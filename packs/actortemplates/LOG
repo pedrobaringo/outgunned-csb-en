@@ -1,23 +1,8 @@
-2025/04/08-12:25:58.104 3250 Recovering log #76
-2025/04/08-12:25:58.113 3250 Level-0 table #78: started
-2025/04/08-12:25:58.126 3250 Level-0 table #78: 276050 bytes OK
-2025/04/08-12:25:58.130 3250 Delete type=0 #76
-2025/04/08-12:25:58.131 3250 Delete type=3 #75
-2025/04/08-12:26:32.431 7b4 Level-0 table #81: started
-2025/04/08-12:26:32.431 7b4 Level-0 table #81: 0 bytes OK
-2025/04/08-12:26:32.434 7b4 Delete type=0 #79
-2025/04/08-12:26:32.442 7b4 Manual compaction at level-0 from '!actors!66I5KCdcWF0Eey1r' @ 72057594037927935 : 1 .. '!actors!qlHDd6ukwsc44HT4' @ 0 : 0; will stop at '!actors!qlHDd6ukwsc44HT4' @ 107 : 1
-2025/04/08-12:26:32.442 7b4 Compacting 1@0 + 0@1 files
-2025/04/08-12:26:32.452 7b4 Generated table #82@0: 7 keys, 276050 bytes
-2025/04/08-12:26:32.454 7b4 Compacted 1@0 + 0@1 files => 276050 bytes
-2025/04/08-12:26:32.456 7b4 compacted to: files[ 0 1 1 0 0 0 0 ]
-2025/04/08-12:26:32.456 7b4 Delete type=2 #78
-2025/04/08-12:26:32.464 7b4 Manual compaction at level-0 from '!actors!qlHDd6ukwsc44HT4' @ 107 : 1 .. '!actors!qlHDd6ukwsc44HT4' @ 0 : 0; will stop at (end)
-2025/04/08-12:26:32.477 7b4 Manual compaction at level-1 from '!actors!66I5KCdcWF0Eey1r' @ 72057594037927935 : 1 .. '!actors!qlHDd6ukwsc44HT4' @ 0 : 0; will stop at '!actors!qlHDd6ukwsc44HT4' @ 107 : 1
-2025/04/08-12:26:32.477 7b4 Compacting 1@1 + 1@2 files
-2025/04/08-12:26:32.491 7b4 Generated table #83@1: 7 keys, 276050 bytes
-2025/04/08-12:26:32.491 7b4 Compacted 1@1 + 1@2 files => 276050 bytes
-2025/04/08-12:26:32.492 7b4 compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/04/08-12:26:32.493 7b4 Delete type=2 #74
-2025/04/08-12:26:32.493 7b4 Delete type=2 #82
-2025/04/08-12:26:32.495 7b4 Manual compaction at level-1 from '!actors!qlHDd6ukwsc44HT4' @ 107 : 1 .. '!actors!qlHDd6ukwsc44HT4' @ 0 : 0; will stop at (end)
+2025/12/01-23:45:44.498 16cc Recovering log #93
+2025/12/01-23:45:44.503 16cc Delete type=0 #93
+2025/12/01-23:45:44.503 16cc Delete type=3 #91
+2025/12/01-23:50:12.921 4164 Level-0 table #98: started
+2025/12/01-23:50:12.921 4164 Level-0 table #98: 0 bytes OK
+2025/12/01-23:50:12.923 4164 Delete type=0 #96
+2025/12/01-23:50:12.928 4164 Manual compaction at level-0 from '!actors!66I5KCdcWF0Eey1r' @ 72057594037927935 : 1 .. '!actors!qlHDd6ukwsc44HT4' @ 0 : 0; will stop at (end)
+2025/12/01-23:50:12.937 4164 Manual compaction at level-1 from '!actors!66I5KCdcWF0Eey1r' @ 72057594037927935 : 1 .. '!actors!qlHDd6ukwsc44HT4' @ 0 : 0; will stop at (end)

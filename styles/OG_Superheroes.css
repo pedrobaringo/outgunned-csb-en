@@ -1,0 +1,76 @@
+/* CSS para Outgunned básico
+https://codepen.io/sosuke/pen/Pjoqqp
+*/
+@font-face {
+  font-family: 'Avengeance';
+  src: url('../assets/AvengeanceHeroicAvenger-Regular.otf');
+}
+.labcampo {
+	font-family:'Avengeance';
+	font-size:23px;
+	text-transform: lowercase;
+	padding-right:10px;
+	padding: 0px 10px 0px 20px;
+	height:30px;
+}
+.labcamporev, .labeltitulo, .labcamponorm,.labcampovehic, .labcampovehicazul{
+	font-family:'Avengeance';
+	text-transform: lowercase;
+	font-size:30px;
+	padding-right:10px;
+	line-height:27px;
+}
+.adrencomp,  .tituloexp {
+	font-family:'Avengeance';
+	text-transform: lowercase;
+	font-size:25px;
+	padding-right:10px;
+	height:30px;
+}
+.panelcashtopsup .mayustext{
+	font-family:'Avengeance';
+	text-transform: lowercase;
+	font-size:25px;
+	padding-right:10px;
+	height:30px;
+}
+.tablarasgos tr td:nth-child(1) a {
+	font-family:'Avengeance';
+	text-transform: lowercase;
+	font-size:20px;
+	line-height:20px;
+}
+.tablaaccesp tr td:nth-child(1) a {
+	font-family:'Avengeance';
+	text-transform: lowercase;
+	font-size:20px;
+	line-height:20px;
+}
+.chat-message .message-content h1{
+	font-family:'Avengeance';
+	text-transform: lowercase;
+	font-size:30px;
+}
+.chat-message .message-header .message-sender{
+	font-family:'Avengeance';
+	text-transform: lowercase;
+	font-size:30px;
+}
+
+:root {
+	--theme-color:  #1e4b88;
+	--director-color: #885B1E;
+	--background-imagen: url('../assets/Fondo Outgunned_Superheroes.webp')center;
+	--filter-color: invert(26%) sepia(10%) saturate(4461%) hue-rotate(178deg) brightness(99%) contrast(98%);
+	--spotlight-icon: url('../assets/Spotlight_black.webp');
+	--bullet-text: 'Bullet';
+	--bullet-image: url('../assets/checkbala_black.webp');
+	--backup-text: 'Backup';
+	--backup-image: url('../assets/checkrefuerzos_black.webp');
+	--bluff-text: 'Bluff';
+	--bluff-image: url('../assets/checkfarol_black.webp');
+}
+@font-face {
+    font-family: "OutgunnedDice-Regular";
+    src: url('../assets/OutgunnedSuperheroes_Regular.otf');
+}

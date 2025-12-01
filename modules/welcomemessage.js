@@ -20,6 +20,7 @@ Hooks.once("init", function() {
 			"outgunned": "Outgunned",
 			"wok": "World of Killers",
 			"adventure": "Adventure",
+			"superheroes": "Superheroes",					
 			"starraiders": "Star Raiders",
 			"risingdragon": "Rising Dragon",
 			"cloakdagger": "Cloak & Dagger",
@@ -120,6 +121,9 @@ Hooks.once("init", function() {
 			} else if (value=="insertcoin") {
 				console.log(value);
 				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_InsertCoin.css");
+			} else if (value=="superheroes") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/outgunned-csb-en/styles/OG_Superheroes.css");						 
 			}
 		}
 	})
