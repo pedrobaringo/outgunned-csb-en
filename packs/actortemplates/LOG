@@ -1,15 +1,15 @@
-2025/12/02-00:12:01.842 3430 Recovering log #105
-2025/12/02-00:12:01.847 3430 Delete type=0 #105
-2025/12/02-00:12:01.848 3430 Delete type=3 #103
-2025/12/02-00:49:29.293 3598 Level-0 table #110: started
-2025/12/02-00:49:29.301 3598 Level-0 table #110: 245725 bytes OK
-2025/12/02-00:49:29.304 3598 Delete type=0 #108
-2025/12/02-00:49:29.309 3598 Manual compaction at level-0 from '!actors!66I5KCdcWF0Eey1r' @ 72057594037927935 : 1 .. '!actors!qlHDd6ukwsc44HT4' @ 0 : 0; will stop at (end)
-2025/12/02-00:49:29.309 3598 Manual compaction at level-1 from '!actors!66I5KCdcWF0Eey1r' @ 72057594037927935 : 1 .. '!actors!qlHDd6ukwsc44HT4' @ 0 : 0; will stop at '!actors!qlHDd6ukwsc44HT4' @ 128 : 1
-2025/12/02-00:49:29.309 3598 Compacting 1@1 + 1@2 files
-2025/12/02-00:49:29.325 3598 Generated table #111@1: 7 keys, 245725 bytes
-2025/12/02-00:49:29.325 3598 Compacted 1@1 + 1@2 files => 245725 bytes
-2025/12/02-00:49:29.327 3598 compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/12/02-00:49:29.327 3598 Delete type=2 #88
-2025/12/02-00:49:29.328 3598 Delete type=2 #110
-2025/12/02-00:49:29.342 3598 Manual compaction at level-1 from '!actors!qlHDd6ukwsc44HT4' @ 128 : 1 .. '!actors!qlHDd6ukwsc44HT4' @ 0 : 0; will stop at (end)
+2025/12/02-00:55:37.120 44b0 Recovering log #114
+2025/12/02-00:55:37.127 44b0 Delete type=0 #114
+2025/12/02-00:55:37.127 44b0 Delete type=3 #112
+2025/12/02-01:01:49.035 3598 Level-0 table #119: started
+2025/12/02-01:01:49.046 3598 Level-0 table #119: 249496 bytes OK
+2025/12/02-01:01:49.049 3598 Delete type=0 #117
+2025/12/02-01:01:49.052 3598 Manual compaction at level-0 from '!actors!66I5KCdcWF0Eey1r' @ 72057594037927935 : 1 .. '!actors!qlHDd6ukwsc44HT4' @ 0 : 0; will stop at (end)
+2025/12/02-01:01:49.055 3598 Manual compaction at level-1 from '!actors!66I5KCdcWF0Eey1r' @ 72057594037927935 : 1 .. '!actors!qlHDd6ukwsc44HT4' @ 0 : 0; will stop at '!actors!qlHDd6ukwsc44HT4' @ 136 : 1
+2025/12/02-01:01:49.055 3598 Compacting 1@1 + 1@2 files
+2025/12/02-01:01:49.066 3598 Generated table #120@1: 7 keys, 249496 bytes
+2025/12/02-01:01:49.066 3598 Compacted 1@1 + 1@2 files => 249496 bytes
+2025/12/02-01:01:49.067 3598 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/12/02-01:01:49.068 3598 Delete type=2 #111
+2025/12/02-01:01:49.068 3598 Delete type=2 #119
+2025/12/02-01:01:49.074 3598 Manual compaction at level-1 from '!actors!qlHDd6ukwsc44HT4' @ 136 : 1 .. '!actors!qlHDd6ukwsc44HT4' @ 0 : 0; will stop at (end)
