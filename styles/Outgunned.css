@@ -3572,8 +3572,9 @@ font-family:'Futura';
 .checkbox1 input[type="checkbox"]:checked::after, .checkbox2 input[type="checkbox"]:checked::after, .checkaguantenorm input[type="checkbox"]:checked::after, .checkaguantebad input[type="checkbox"]:checked::after, .checkaguantehot input[type="checkbox"]:checked::after, .checkspot input[type="checkbox"]:checked::after, .checkadren input[type="checkbox"]:checked::after, .ruletacheck input[type="checkbox"]:checked::after, .cargcheck input[type="checkbox"]:checked::after, .maletincheck input[type="checkbox"]:checked::after, .cashcheck input[type="checkbox"]:checked::after, .checkarmorgris input[type="checkbox"]:checked::after, .checkarmornorm input[type="checkbox"]:checked::after, .motocheck input[type="checkbox"]:checked::after, .cochecheck input[type="checkbox"]:checked::after, .barcocheck input[type="checkbox"]:checked::after, .helicheck input[type="checkbox"]:checked::after, .tanquecheck input[type="checkbox"]:checked::after, .chaseblue input[type="checkbox"]:checked::after, .chasered input[type="checkbox"]:checked::after, .termocheck input[type="checkbox"]:checked::after, .panelridearmordirect input[type="checkbox"]:checked::after, .panelvehiculosdibdirect input[type="checkbox"]:checked::after, .checkbala input[type="checkbox"]:checked::after, .checkrefuerzos input[type="checkbox"]:checked::after, .checkfarol input[type="checkbox"]:checked::after, .checkaguantehotenem input[type="checkbox"]:checked::after, .goldcheck input[type="checkbox"]:checked::after, .checkbelmont input[type="checkbox"]:checked::after, .checkbladebullet input[type="checkbox"]:checked::after, .checkbluff input[type="checkbox"]:checked::after, .checksuerte input[type="checkbox"]:checked::after, .checkadv input[type="checkbox"]:checked::after, .roundheatcheck input[type="checkbox"]:checked::after, .starshipcheckbox input[type="checkbox"]:checked::after, .bicicheck input[type="checkbox"]:checked::after, .lifecheck1 input[type="checkbox"]:checked::after, .lifecheck2 input[type="checkbox"]:checked::after, .lifecheck3 input[type="checkbox"]:checked::after, .checkaguantepow input[type="checkbox"]:checked::after, .checkpower input[type="checkbox"]:checked::after, .sinpodercheck input[type="checkbox"]:checked::after, .checkspotsuper input[type="checkbox"]:checked::after, .cargchecksup input[type="checkbox"]:checked::after {
     content: "";
 }
-input[type=text] {
+.sheet input[type=text] {
 		box-shadow:0px 0px;
+		color: black;
 }
 table tbody tr:nth-child(even) {
     background-color: transparent;
@@ -3592,6 +3593,9 @@ table th, table td {
 .panelelecciontipo input {
   justify-content: center;
   text-align: center;
+}
+.sheet summary:before {
+	border-color: transparent transparent transparent #000000;
 }
 
 :root {

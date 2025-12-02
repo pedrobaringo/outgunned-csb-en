@@ -197,6 +197,8 @@ Hooks.once("ready", function() {
 							game.macros.getName('Roll - Reroll - All In (Integrado) (QuickDraw-Draw)').update({ownership:{default:2}});
 							game.macros.getName('Roll - Reroll - All In (Integrado) (QuickDraw-Stareoff)').update({ownership:{default:2}});
 						}, 5000);
+						 ui.notifications.info(game.i18n.localize("Imported templates. Reloading world in 6sec..."), {permanent: true});
+						window.setTimeout(window.location.reload.bind(window.location), 7000);
 					});
 				}
 				}, 100);
@@ -252,6 +254,8 @@ Hooks.once("ready", function() {
 							game.macros.getName('Roll - Reroll - All In (Integrado) (QuickDraw-Draw)').update({ownership:{default:2}});
 							game.macros.getName('Roll - Reroll - All In (Integrado) (QuickDraw-Stareoff)').update({ownership:{default:2}});
 						}, 5000);
+						ui.notifications.info(game.i18n.localize("Imported templates. Reloading world in 6sec..."), {permanent: true});
+						window.setTimeout(window.location.reload.bind(window.location), 7000);
 					});
 				}
 				}, 500);
