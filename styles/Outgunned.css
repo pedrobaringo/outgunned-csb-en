@@ -496,7 +496,7 @@
 }
 .panelgrandedesc  > :first-child {
 	display:grid;
-	grid-template-columns: 42% 58%;
+	grid-template-columns: 40% 58%;
 }
 .spotlightpanel {
 	width:100px;
