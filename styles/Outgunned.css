@@ -652,7 +652,7 @@
 }
 .panelruleta {
 	width:140px;
-   height:140px;
+   min-height:140px;
    border-radius:50%;
    background: url(../assets/Ruleta_muerte_black.webp);
 	background-repeat: no-repeat;
@@ -3142,7 +3142,7 @@ font-family:'Futura';
 }
 .livespanel {
     width: 180px;
-    height: 180px;
+    min-height: 180px;
     background: url(../assets/LivesBack.webp);
     background-repeat: no-repeat;
     background-size: contain;
