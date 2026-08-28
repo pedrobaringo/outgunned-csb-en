@@ -1705,7 +1705,7 @@ font-family:'Futura';
 }
 .termometro {
 	width:150px;
-   height:500px;
+   min-height:500px;
    background: url(../assets/Termometro_black.webp);
 	background-repeat: no-repeat;
  	background-size: contain;
@@ -1927,8 +1927,8 @@ font-family:'Futura';
     border-radius: 50%;
     position: relative;
     margin: 0px 0px 0px 27%;
-	bottom:0px;
-	left:19%;
+	bottom: -44px;
+    left: 15%;
 }
 .panelmisiondoble .flex-group-center {
   justify-content: flex-start;
@@ -2827,7 +2827,7 @@ font-family:'Futura';
 }
 .panelheatround {
     width: 200px;
-    height: 200px;
+    min-height: 200px;
     border-radius: 50%;
     background: url(../assets/Heatround.webp);
     background-repeat: no-repeat;
