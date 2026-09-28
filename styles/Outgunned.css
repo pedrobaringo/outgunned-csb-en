@@ -98,6 +98,8 @@
 .character input[type="radio"]:checked::before, .character  input[type="radio"]:checked::after, .equippableItem input[type="radio"]:checked::before,  .equippableItem  input[type="radio"]:checked::after, .custom-dialog input[type="radio"]:checked::before, .custom-dialog  input[type="radio"]:checked::after {
     content: "\f192";
     color: black;
+	font-family: "FontAwesome";
+    font-weight: 400;
 }
 .character .content-link, .equippableItem .content-link, .custom-dialog .content-link {
   background:transparent;
